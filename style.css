@@ -132,10 +132,11 @@
 
     @media all and (min-width: 300px) {
 
-html, body {
-max-width: 100%;
-overflow: hidden;
-}
+        html,
+        body {
+            max-width: 100%;
+            overflow: hidden;
+        }
 
         img.mob_image4 {
             position: absolute;
@@ -195,13 +196,13 @@ overflow: hidden;
         }
 
 
-    p {
-        position: absolute;
-        display: block;
-        font-size: 16px;
-        text-align: center;
-        bottom: 3%;
-    }
+        p {
+            position: absolute;
+            display: block;
+            font-size: 16px;
+            text-align: center;
+            bottom: 3%;
+        }
 
         a {
             color: white;
@@ -263,13 +264,13 @@ overflow: hidden;
         }
 
 
-    p {
-        position: absolute;
-        display: block;
-        font-size: 24px;
-        text-align: center;
-        bottom: 3%;
-    }
+        p {
+            position: absolute;
+            display: block;
+            font-size: 22px;
+            text-align: center;
+            bottom: 3%;
+        }
 
         p.ptext {
 
