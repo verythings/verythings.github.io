@@ -155,7 +155,7 @@
             position: absolute;
             width: 200px;
             margin: 0 auto;
-            left: 48%;
+            left: 48.5%;
 
             margin-left: -100px;
 
@@ -231,7 +231,7 @@
             position: absolute;
             width: 300px;
             margin: 0 auto;
-left: 50%;
+            left: 50%;
 
             margin-left: -150px;
             z-index: 999;
@@ -282,7 +282,7 @@ left: 50%;
         p.ptext {
             color: #03901f;
 
-                        left: 0;
+            left: 0;
         }
 
         a {
