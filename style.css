@@ -153,11 +153,11 @@
 
         .logo {
             position: absolute;
-            width: 150px;
+            width: 200px;
             margin: 0 auto;
+            left: 48%;
 
-            margin-top: 16px;
-            margin-left: -75px;
+            margin-left: -100px;
 
             z-index: 999;
         }
@@ -179,8 +179,10 @@
         }
 
         .imgcenter {
+            position: absolute;
             text-align: center;
             width: 100%;
+
             top: 32px;
 
         }
@@ -193,14 +195,17 @@
             line-height: 1.35;
             color: white;
             z-index: 998;
+
+            left: 10px;
         }
 
 
         p {
             position: absolute;
             display: block;
-            font-size: 16px;
+            font-size: 17px;
             text-align: center;
+            margin: 0 auto;
             bottom: 3%;
         }
 
@@ -226,10 +231,9 @@
             position: absolute;
             width: 300px;
             margin: 0 auto;
+left: 50%;
 
-            margin-top: 16px;
             margin-left: -150px;
-
             z-index: 999;
         }
 
@@ -269,12 +273,16 @@
             display: block;
             font-size: 22px;
             text-align: center;
+            margin: 0 auto;
             bottom: 3%;
+
+
         }
 
         p.ptext {
-
             color: #03901f;
+
+                        left: 0;
         }
 
         a {
