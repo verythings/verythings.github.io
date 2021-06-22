@@ -1,0 +1,266 @@
+    *,
+    *:before,
+    *:after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 100%;
+        overflow: hidden;
+    }
+
+    @font-face {
+        font-family: "SFMono-Regular";
+        src: url(fonts/SFMono-Regular.eot);
+        src: local(※), url(fonts/SFMono-Regular.woff) format("woff") unicode-range: U+0000-0070;
+    }
+
+    body {
+        font-family: 'Noto Sans KR', 'SFMono-Regular', sans-serif;
+        line-height: 1.5;
+        width: 100%;
+        color: #03901f;
+        word-break: keep-all;
+        letter-spacing: -0.7px;
+        background-color: rgba(245, 243, 232, 1);
+        margin: 8px 16px 16px 16px;
+
+    }
+
+    p {
+        position: absolute;
+        display: block;
+        font-size: 24px;
+        text-align: center;
+        bottom: 3%;
+    }
+
+
+    p.ptext {
+        font-family: 'SFMono-Regular', sans-serif;
+        width: 100%;
+        position: absolute;
+        word-spacing: -0.3;
+        line-height: 1.35;
+        color: #03901f;
+    }
+
+    video {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        top: -10px;
+        left: -8px;
+
+    }
+
+    .Squirrel {
+        position: absolute;
+        width: 200%;
+        height: 100%;
+        top: -10px;
+        left: -10px;
+    }
+
+    .box {
+        position: absolute;
+        display: inline;
+
+        width: 470px;
+        height: 250px;
+        border-radius: 90%;
+
+
+        bottom: 0vw;
+        left: 50%;
+        margin-left: -180px;
+        background-color: rgba(245, 243, 232, 1);
+
+    }
+
+    .imgcenter {
+        text-align: center;
+        width: 100%;
+        top: 32px;
+
+    }
+
+    img {
+        display: inline-block;
+        width: 42px;
+
+    }
+
+    figure {
+        text-align: center;
+
+    }
+
+    .logo {
+        position: absolute;
+        width: 300px;
+        margin: 0 auto;
+
+        margin-top: 16px;
+        margin-left: -150px;
+
+        z-index: 999;
+    }
+
+    img.mob_image4 {
+        position: absolute;
+        display: block;
+        width: 300%;
+    }
+
+    a {
+        display: inline-block;
+        color: #03901f;
+    }
+
+    a:link {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    a:active {
+        text-decoration: underline;
+    }
+
+    @media all and (min-width: 300px) {
+
+
+        img.mob_image4 {
+            position: absolute;
+            display: block;
+            top: -50px;
+            left: -50px;
+            width: 120%;
+            height: 120%;
+        }
+
+        video {
+            display: none;
+        }
+
+        .logo {
+            position: absolute;
+            width: 150px;
+            margin: 0 auto;
+
+            margin-top: 16px;
+            margin-left: -75px;
+
+            z-index: 999;
+        }
+
+        .Squirrel {
+            display: block;
+            position: absolute;
+            width: 500%;
+            height: 100%;
+            margin: 0;
+            bottom: 100vw;
+            left: -200%;
+
+        }
+
+        .box {
+            display: none;
+
+        }
+
+        .imgcenter {
+            text-align: center;
+            width: 100%;
+            top: 32px;
+
+        }
+
+        p.ptext {
+            font-family: 'SFMono-Regular', sans-serif;
+            width: 100%;
+            position: absolute;
+            word-spacing: -0.3;
+            line-height: 1.35;
+            color: white;
+            z-index: 998;
+        }
+
+        a {
+            color: white;
+        }
+
+        a:link {
+            color: white;
+        }
+    }
+
+    @media all and (min-width: 900px) {}
+
+    @media all and (min-width: 1024px) {
+
+
+        img.mob_image4 {
+            display: none;
+        }
+
+        .logo {
+            position: absolute;
+            width: 300px;
+            margin: 0 auto;
+
+            margin-top: 16px;
+            margin-left: -150px;
+
+            z-index: 999;
+        }
+
+        video {
+            display: block;
+            position: absolute;
+            width: 100%;
+            top: -10px;
+            left: -8px;
+
+        }
+
+        .Squirrel {
+
+            display: none;
+        }
+
+        .box {
+            position: absolute;
+            display: inline;
+
+            width: 470px;
+            height: 250px;
+            border-radius: 90%;
+
+
+            bottom: 0vw;
+            left: 50%;
+            margin-left: -180px;
+            background-color: rgba(245, 243, 232, 1);
+
+        }
+
+        p.ptext {
+
+            color: #03901f;
+        }
+
+        a {
+            color: #03901f;
+        }
+
+        a:link {
+            color: #03901f;
+        }
+    }
+
+    @media print {}
