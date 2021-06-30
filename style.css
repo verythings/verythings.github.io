@@ -14,8 +14,14 @@
         src: local(※), url(fonts/SFMono-Regular.woff) format("woff") unicode-range: U+0000-0070;
     }
 
+    @font-face {
+        font-family: "NormalBatang-Regular";
+        src: url(fonts/NormalBatang-Regular.eot);
+        src: local(※), url(fonts/NormalBatang-Regular.woff) format("woff")
+    }
+
     body {
-        font-family: 'Noto Sans KR', 'SFMono-Regular', sans-serif;
+        font-family: 'NormalBatang-Regular', serif;
         line-height: 1.5;
         width: 100%;
         color: #03901f;
@@ -36,7 +42,7 @@
 
 
     p.ptext {
-        font-family: 'SFMono-Regular', sans-serif;
+        font-family: 'NormalBatang-Regular', serif;
         width: 100%;
         position: absolute;
         word-spacing: -0.3;
@@ -188,7 +194,7 @@
         }
 
         p.ptext {
-            font-family: 'SFMono-Regular', sans-serif;
+            font-family: 'NormalBatang-Regular', serif;
             width: 100%;
             position: absolute;
             word-spacing: -0.3;
@@ -199,7 +205,7 @@
             left: 10px;
         }
 
-        .atext{
+        .atext {
             margin-top: -8px;
         }
 
