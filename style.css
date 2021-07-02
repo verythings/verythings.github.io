@@ -122,18 +122,21 @@
     a {
         display: inline-block;
         color: #03901f;
-    }
-
-    a:link {
         text-decoration: none;
+
     }
 
     a:hover {
         text-decoration: underline;
+        text-underline-position: under;
+
+
     }
 
     a:active {
         text-decoration: underline;
+        text-underline-position: under;
+
     }
 
     /*    /////////////*/
