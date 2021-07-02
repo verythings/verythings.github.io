@@ -136,21 +136,14 @@
         text-decoration: underline;
     }
 
+    /*    /////////////*/
+
     @media all and (min-width: 300px) {
 
         html,
         body {
             max-width: 100%;
             overflow: hidden;
-        }
-
-        img.mob_image4 {
-            position: absolute;
-            display: block;
-            top: -50px;
-            left: -50px;
-            width: 120%;
-            height: 120%;
         }
 
         video {
@@ -228,14 +221,7 @@
         }
     }
 
-    @media all and (min-width: 900px) {}
-
     @media all and (min-width: 1024px) {
-
-
-        img.mob_image4 {
-            display: none;
-        }
 
         .logo {
             position: absolute;
