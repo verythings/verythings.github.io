@@ -30,8 +30,9 @@
         ? true
         : false;
       $(window).resize(function () {
-        if (windowWidth <= 768 || isMobile == true) {
-          location.href = "./index.html";
+        var windowWidth = window.outerWidth;
+        if (windowWidth < 768 || isMobile == true) {
+          location.href = "./index.m.html";
         }
       });
     </script>

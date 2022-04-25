@@ -33,7 +33,7 @@
         : false;
       $(window).resize(function () {
         var windowWidth = window.outerWidth;
-        if (windowWidth <= 768 || isMobile == false) {
+        if (windowWidth >= 768 || isMobile == true) {
           location.href = "./index.html";
         }
       });
