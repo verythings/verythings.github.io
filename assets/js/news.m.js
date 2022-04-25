@@ -9,12 +9,12 @@
 // });
 
 jQuery(document).ready(function () {
-  $(".top").mouseup(function () {
+  // $(".top").mouseup(function () {
+      $(".top").on("click", function () {
     if (
       /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
     ) {
-      $("body").animate({ scrollTop: $(this).offset().top + 100 }, 200);
-      return false;
+      $.mobile.silentScroll(100);
     }
   });
 });
