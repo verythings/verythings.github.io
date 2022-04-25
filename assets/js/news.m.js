@@ -1,9 +1,3 @@
-$(function () {
-  $("details").on("click", function () {
-    $("body, html").animate({ scrollTop: $("#top").offset().top }, 400);
-  });
-});
-
 window.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll("details").forEach(function (item) {
     item.addEventListener("toggle", (event) => {
@@ -14,5 +8,11 @@ window.addEventListener("DOMContentLoaded", function () {
         });
       }
     });
+  });
+});
+
+$(function () {
+  $("details").on("click", function () {
+    $("body, html").animate({ scrollTop: $("#top").offset().top }, 400);
   });
 });

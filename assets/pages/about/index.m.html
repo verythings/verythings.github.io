@@ -41,7 +41,7 @@
         ? true
         : false;
       $(window).resize(function () {
-        if ($(window).width() > 768) {
+        if ($(window).width() > 768 || isMobile == false) {
           location.href = "./index.html";
         }
       });

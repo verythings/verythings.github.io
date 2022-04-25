@@ -32,20 +32,6 @@
       content="http://gyeon.org/verythings/assets/img/og-image.jpg"
     />
 
-    <script src="../../js/jquery.min.js"></script>
-    <script>
-      var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(
-        navigator.userAgent
-      )
-        ? true
-        : false;
-      $(window).resize(function () {
-        if ($(window).width() > 768) {
-          location.href = "./2-celine.html";
-        }
-      });
-    </script>
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
@@ -112,6 +98,7 @@
         alt=""
         src="../../img/files/celine/m_pages_1.jpg"
         id="pic"
+        class="click"
       />
     </figure>
 
@@ -132,10 +119,12 @@
     </footer>
 
     <figure>
-      <a href="./1-nevertheless.m.html"> prev project</a>
-      <a href="./3-lewest.m.html"> next project</a>
-      <div class="arrow is-left"></div>
-      <div class="arrow is-right"></div>
+      <a href="./1-nevertheless.m.html">
+        <img class="arrow-left" src="../../img/left-arrow.png"
+      />prev project</a>
+      <a href="./3-lewest.m.html">
+        <img class="arrow-right" src="../../img/left-arrow.png"
+      />next project</a>
     </figure>
 
     <div class="formobile">
@@ -145,22 +134,18 @@
       </div>
     </div>
 
+    <script src="../../js/jquery.min.js"></script>
+
     <script>
-      $(document).ready(function () {
-        $("figure a, .arrow").css("color", "rgb(0,0,0)");
-        $(function () {
-          $("figure img").on("click", function () {
-            $("body, html")
-              .css("background-color", "rgb(206,56,43)")
-              .css("color", "white");
-          });
-          $("figure img").on("click", function () {
-            $(".logo").css("filter", "invert(1)");
-          });
-          $("figure img").on("click", function () {
-            $("figure a, .arrow").css("color", "white");
-          });
-        });
+      var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(
+        navigator.userAgent
+      )
+        ? true
+        : false;
+      $(window).resize(function () {
+        if ($(window).width() > 768 || isMobile == false) {
+          location.href = "./2-celine.html";
+        }
       });
     </script>
     <script type="text/javascript">

@@ -12,24 +12,35 @@
   <meta name="keywords" content="Verythings" />
   <meta itemprop="name" content="Verythings" />
   <meta itemprop="description" content="Verythings" />
-  <meta itemprop="image" content="http://gyeon.org/verythings/assets/img/og-image.jpg" />
+  <meta
+    itemprop="image"
+    content="http://gyeon.org/verythings/assets/img/og-image.jpg"
+  />
   <meta property="og:url" content="verythings.org" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Verythings" />
   <meta property="og:description" content="Verythings" />
-  <meta property="og:image" content="http://gyeon.org/verythings/assets/img/og-image.jpg" />
+  <meta
+    property="og:image"
+    content="http://gyeon.org/verythings/assets/img/og-image.jpg"
+  />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Verythings" />
   <meta name="twitter:description" content="Verythings" />
-  <meta name="twitter:image" content="http://gyeon.org/verythings/assets/img/og-image.jpg" />
+  <meta
+    name="twitter:image"
+    content="http://gyeon.org/verythings/assets/img/og-image.jpg"
+  />
 
   <script src="../../js/jquery.min.js"></script>
   <script>
-    var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)
+    var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(
+      navigator.userAgent
+    )
       ? true
       : false;
     $(window).resize(function () {
-      if ($(window).width() > 768) {
+      if ($(window).width() > 768 || isMobile == false) {
         location.href = "./index.html";
       }
     });
@@ -54,7 +65,12 @@
               <a href="./index.m.html">Work</a>
             </div>
             <div class="category-view">
-              <div onclick="location.href='./branding.html'" class="category-view-1">Branding</div>
+              <div
+                onclick="location.href='./branding.html'"
+                class="category-view-1"
+              >
+                Branding
+              </div>
               <div class="category-view-2">Space</div>
               <div class="category-view-3">Pop-up</div>
               <div class="category-view-4">Planting</div>
@@ -126,7 +142,9 @@
           ><li>
             <img src="../../img/files/1/content-7.jpg" />
             <figcaption>
-              <sub> 현대 Peer - Active Sports Club / <br />Branding &#38; Pop up </sub>
+              <sub>
+                현대 Peer - Active Sports Club / <br />Branding &#38; Pop up
+              </sub>
             </figcaption>
           </li></a
         >

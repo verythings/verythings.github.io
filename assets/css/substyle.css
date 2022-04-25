@@ -26,8 +26,8 @@ body {
 }
 
 html {
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue,
-    helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+    helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
   line-height: 1.15;
   font-size: 16px;
   -webkit-text-size-adjust: 100%;
@@ -52,11 +52,11 @@ body {
   font-family: "SuisseIntl-Book", "Pretendard", sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  background-color: rgba(241, 225, 147);
+  background-color: rgba(92, 122, 82);
 
   color: white;
   overflow: auto;
-  cursor: inherit;
+  cursor: url(../img/files/cursor.cur) 10 10, auto;
 }
 
 #defaultCanvas0 {
@@ -74,7 +74,7 @@ a {
   -webkit-user-select: none;
   -ms-user-select: none;
 
-  cursor: pointer;
+  cursor: url(../img/files/cursor_hover.cur) 10 10, auto;
 }
 
 p {
@@ -83,7 +83,7 @@ p {
 
 h1 {
   font-size: 1.1rem;
-  cursor: pointer;
+  cursor: url(../img/files/cursor_hover.cur) 10 10, auto;
 }
 
 video {
@@ -121,14 +121,12 @@ video {
   column-gap: 0.25rem;
   row-gap: 0.1rem;
   z-index: 10;
-
-  display: none;
 }
 
 nav {
   width: 100%;
   height: 10rem;
-  background-color: rgba(241, 225, 147);
+  background-color: rgba(92, 122, 82);
 
   position: sticky;
   top: 0px;
@@ -314,8 +312,6 @@ footer mark {
     top: 3.15rem;
     font-size: 0.75rem;
     right: 1.1rem;
-
-    display: none;
   }
 
   .header {
@@ -403,7 +399,7 @@ footer mark {
 
   article footer {
     position: absolute;
-    font-size: 1.25rem;
+    font-size: 1rem;
     left: 1.5rem;
     bottom: 1.25rem;
   }
@@ -440,7 +436,7 @@ footer mark {
 
   article footer {
     grid-column: 1;
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 
   figure {
@@ -449,7 +445,7 @@ footer mark {
 
   .emphasis-en,
   .emphasis-kr {
-    cursor: pointer;
+    cursor: url(../img/files/cursor_hover.cur) 10 10, auto;
   }
 }
 
@@ -488,7 +484,7 @@ h1 {
 
 li {
   display: block;
-  cursor: pointer;
+  cursor: url(../img/files/cursor_hover.cur) 10 10, auto;
   list-style: none;
   min-width: 300px;
   padding: 1rem;
@@ -496,33 +492,33 @@ li {
 }
 
 li:nth-child(1) {
-  background: no-repeat center/100vh url("../img/thumb-1.jpg");
+  background: no-repeat center/100vh url("../img/thumb-6.jpg");
   padding-top: 9rem;
   cursor: inherit;
 }
 li:nth-child(2) {
-  background: no-repeat center/100vh url("../img/thumb-2.jpg");
+  background: no-repeat center/100vh url("../img/thumb-12.jpg");
 }
 li:nth-child(3) {
-  background: no-repeat center/100vh url("../img/thumb-3.jpg");
-}
-li:nth-child(4) {
-  background: no-repeat center/100vh url("../img/thumb-4.jpg");
-}
-li:nth-child(5) {
   background: no-repeat center/100vh url("../img/thumb-5.jpg");
 }
+li:nth-child(4) {
+  background: no-repeat center/100vh url("../img/thumb-10.jpg");
+}
+li:nth-child(5) {
+  background: no-repeat center/100vh url("../img/thumb-22.jpg");
+}
 li:nth-child(6) {
-  background: no-repeat center/100vh url("../img/thumb-6.jpg");
+  background: no-repeat center/100vh url("../img/thumb-2.jpg");
 }
 li:nth-child(7) {
-  background: no-repeat center/100vh url("../img/thumb-7.jpg");
+  background: no-repeat center/100vh url("../img/thumb-6.jpg");
 }
 li:nth-child(8) {
-  background: no-repeat center/100vh url("../img/thumb-8.jpg");
+  background: no-repeat center/100vh url("../img/thumb-12.jpg");
 }
 li:nth-child(9) {
-  background: no-repeat center/100vh url("../img/thumb-9.jpg");
+  background: no-repeat center/100vh url("../img/thumb-5.jpg");
 }
 li:nth-child(10) {
   background: no-repeat center/100vh url("../img/thumb-10.jpg");
@@ -732,7 +728,7 @@ li:nth-child(18) {
 
   #details {
     outline: none;
-    cursor: pointer;
+    cursor: url(../img/files/cursor_hover.cur) 10 10, auto;
   }
   #details > ul {
     padding-left: 20px;

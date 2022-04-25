@@ -40,7 +40,7 @@
         ? true
         : false;
       $(window).resize(function () {
-        if ($(window).width() > 1024) {
+        if ($(window).width() > 1024 || isMobile == false) {
           location.href = "./index.html";
         }
       });

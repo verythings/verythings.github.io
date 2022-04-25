@@ -14,235 +14,519 @@
     <meta name="keywords" content="Verythings" />
     <meta itemprop="name" content="Verythings" />
     <meta itemprop="description" content="Verythings" />
-    <meta itemprop="image" content="http://gyeon.org/verythings/assets/img/og-image.jpg" />
+    <meta
+      itemprop="image"
+      content="http://gyeon.org/verythings/assets/img/og-image.jpg"
+    />
     <meta property="og:url" content="verythings.org" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Verythings" />
     <meta property="og:description" content="Verythings" />
-    <meta property="og:image" content="http://gyeon.org/verythings/assets/img/og-image.jpg" />
+    <meta
+      property="og:image"
+      content="http://gyeon.org/verythings/assets/img/og-image.jpg"
+    />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Verythings" />
     <meta name="twitter:description" content="Verythings" />
-    <meta name="twitter:image" content="http://gyeon.org/verythings/assets/img/og-image.jpg" />
+    <meta
+      name="twitter:image"
+      content="http://gyeon.org/verythings/assets/img/og-image.jpg"
+    />
 
     <script src="../../js/jquery.min.js"></script>
     <script src="../../js/work-intro-v.js"></script>
     <script>
-      var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)
+      var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(
+        navigator.userAgent
+      )
         ? true
         : false;
       $(window).resize(function () {
-        if ($(window).width() < 768) {
+        if ($(window).width() < 768 || isMobile == true) {
           location.href = "./index.m.html";
         }
       });
     </script>
 
-    <link rel="stylesheet" href="../../css/plate.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
   </head>
-  <body>
-    <main id="top">
-      <div class="logo blend">
-        <span class="l">
-          <a href="../../../index.html">
-            <img src="../../img/logo.svg" />
+  <body class="home custom-cursor">
+    <div class="main viewport-container">
+      <main id="top">
+        <div class="logo blend">
+          <span class="l">
+            <a href="../../../index.html"><img src="../../img/logo.svg" /></a>
+          </span>
+        </div>
+
+        <div class="header blend">
+          <div class="work-space-l active">
+            <a href="./work">Work</a>
+          </div>
+
+          <div class="about-space-l">
+            <a href="../about">About</a>
+          </div>
+          <div class="news-space-l">
+            <a href="../news">News</a>
+          </div>
+        </div>
+
+        <video id="intro-v" preload="none" muted loop autoplay playsinline>
+          <source src="../../img/main/intro.mp4" type="video/mp4" />
+        </video>
+        <mark>Skip Intro</mark>
+
+        <div class="category-view">
+          <div class="category-view-1">Branding</div>
+          <div class="category-view-2">Space</div>
+          <div class="category-view-3">Pop-up</div>
+          <div class="category-view-4">Planting</div>
+          <div class="category-view-5">Exhibition</div>
+        </div>
+      </main>
+
+      <div class="grid viewport-content" id="home-grid">
+        <div
+          class="img-wrapper portrait space-1"
+          style="background-image: url('../../img/thumb-1.jpg')"
+        >
+          <img
+            class="image"
+            data-hd="../../img/files/1/content-1.jpg"
+            src="../../img/thumb-1.jpg"
+            width="2000"
+            height="2500"
+          />
+
+          <a
+            class="caption s small-nav"
+            href="../../pages/project/1-nevertheless.html"
+          >
+            <span class="caption-title">그래도팜 / Space design</span>
           </a>
-        </span>
-      </div>
+          <span class="loading"></span>
+        </div>
+        <div
+          class="img-wrapper portrait"
+          style="background-image: url('../../img/thumb-2.jpg')"
+        >
+          <img
+            class="image"
+            data-hd="../../img/files/1/content-2.jpg"
+            src="../../img/thumb-2.jpg"
+            width="1800"
+            height="2400"
+          />
 
-      <div class="header blend">
-        <div class="work-space-l active">
-          <a href="./index.html">Work</a>
+          <a class="caption s small-nav" href="./project/2-celine.html">
+            <span class="caption-title">Vogue 12월호 - Celine / Styling</span>
+          </a>
+          <span class="loading"></span>
+        </div>
+        <div
+          class="img-wrapper portrait branding-1"
+          style="background-image: url('../../img/thumb-3.jpg')"
+        >
+          <img
+            class="image"
+            data-hd="../../img/files/1/content-3.jpg"
+            src="../../img/thumb-3.jpg"
+            width="1440"
+            height="1800"
+          />
+          <a class="caption s small-nav" href="../../pages/project/3-lewest.html">
+            <span class="caption-title"
+              >LE WEST / Branding &#38; Wayfinding</span
+            >
+          </a>
+          <span class="loading"></span>
         </div>
 
-        <div class="about-space-l">
-          <a href="../about">About</a>
+        <div
+          class="img-wrapper portrait"
+          style="background-image: url('../../img/thumb-4.jpg')"
+        >
+          <img
+            class="image"
+            data-hd="../../img/files/1/content-4.jpg"
+            src="../../img/thumb-4.jpg"
+            width="1440"
+            height="1799"
+          />
+          <a
+            class="caption s small-nav"
+            href="../../pages/project/4-snoopy-garden-school.html"
+          >
+            <span class="caption-title"
+              >Snoopy garden - 가드닝 스쿨 / Space</span
+            >
+          </a>
+          <span class="loading"></span>
         </div>
-        <div class="news-space-l">
-          <a href="../news">News</a>
+
+        <div
+          class="img-wrapper portrait"
+          style="background-image: url('../../img/thumb-5.jpg')"
+        >
+          <img
+            class="image"
+            data-hd="../../img/files/1/content-5.jpg"
+            src="../../img/thumb-5.jpg"
+            width="1440"
+            height="1799"
+          />
+          <a class="caption s small-nav" href="../../pages/project/5-eenk.html">
+            <span class="caption-title">EENK 21FW / Styling</span>
+          </a>
+          <span class="loading"></span>
+        </div>
+
+        <div
+          class="img-wrapper portrait has-video space-3"
+          style="background-image: url('../../img/thumb-6.jpg')"
+        >
+          <img
+            class="image"
+            data-hd="../../img/files/1/content-6.jpg"
+            src="../../img/thumb-6.jpg"
+            width="1920"
+            height="2400"
+          />
+          <video
+            preload="none"
+            class="top"
+            id="browserpreview_tmp_2.jpg"
+            muted
+            loop
+            playsinline
+            style="position: absolute; width: 100%; z-index: 1"
+          >
+            <source src="../../img/files/1/video-2.mp4" type="video/mp4" />
+          </video>
+          <a
+            class="caption s small-nav"
+            href="../../pages/project/6-snoopy-garden-house.html"
+          >
+            <span class="caption-title"
+              >Snoopy garden - 도그 하우스 / Space</span
+            > </a
+          ><span class="loading"></span>
+        </div>
+
+        <div
+          class="img-wrapper portrait has-video branding-2"
+          style="background-image: url('../../img/thumb-7.jpg')"
+        >
+          <img
+            class="image"
+            data-hd="../../img/files/1/content-7.jpg"
+            src="../../img/thumb-7.jpg"
+            width="1080"
+            height="1351"
+          />
+          <video
+            preload="none"
+            id="browserpreview_tmp_1.jpg"
+            muted
+            loop
+            playsinline
+            style="position: absolute; width: 100%; z-index: 1"
+          >
+            <source src="../../img/files/1/video-1.mp4" type="video/mp4" />
+          </video>
+
+          <a class="caption s small-nav" href="../../pages/project/7-peer.html">
+            <span class="caption-title"
+              >현대 Peer - Active Sports Club / Branding &#38; Pop up</span
+            >
+          </a>
+          <span class="loading"></span>
+        </div>
+        <div
+          class="img-wrapper portrait branding space-4"
+          style="background-image: url('../../img/thumb-8.jpg')"
+        >
+          <img
+            class="image"
+            data-hd="../../img/files/1/content-8.jpg"
+            src="../../img/thumb-8.jpg"
+            width="1591"
+            height="2400"
+          />
+
+          <a class="caption s small-nav" href="../../pages/project/8-switch.html">
+            <span class="caption-title">Switch 22 / Branding &#38; Space</span>
+          </a>
+          <span class="loading"></span>
+        </div>
+        <div
+          class="img-wrapper portrait"
+          style="background-image: url('../../img/thumb-9.jpg')"
+        >
+          <img
+            class="image"
+            data-hd="../../img/files/1/content-9.jpg"
+            src="../../img/thumb-9.jpg"
+            width="1600"
+            height="2400"
+          />
+          <a
+            class="caption s small-nav"
+            href="../../pages/project/9-beyondwall.html"
+          >
+            <span class="caption-title">Beyond Wall / Product</span>
+          </a>
+          <span class="loading"></span>
+        </div>
+        <div
+          class="img-wrapper landscape"
+          style="background-image: url('../../img/thumb-10.jpg')"
+        >
+          <img
+            class="image"
+            data-hd="../../img/files/1/content-10.jpg"
+            src="../../img/thumb-10.jpg"
+            width="2400"
+            height="1799"
+          />
+          <a class="caption s small-nav" href="../../pages/project/10-hermes.html">
+            <span class="caption-title">Elle 5월호 - Hermes / Styling</span>
+          </a>
+          <span class="loading"></span>
+        </div>
+        <div
+          class="img-wrapper portrait space-5"
+          style="background-image: url('../../img/thumb-11.jpg')"
+        >
+          <img
+            class="image"
+            data-hd="../../img/files/1/content-11.jpg"
+            src="../../img/thumb-11.jpg"
+            width="1200"
+            height="1800"
+          />
+          <a
+            class="caption s small-nav"
+            href="../../pages/project/11-seoyoosuk-stay.html"
+          >
+            <span class="caption-title">스테이 서유숙 / Space</span>
+          </a>
+          <span class="loading"></span>
+        </div>
+        <div
+          class="img-wrapper landscape branding-3 space-6"
+          style="background-image: url('../../img/thumb-12.jpg')"
+        >
+          <img
+            class="image"
+            data-hd="../../img/files/1/content-12.jpg"
+            src="../../img/thumb-12.jpg"
+            width="2400"
+            height="1600"
+          />
+          <a class="caption s small-nav" href="../../pages/project/12-sushi.html">
+            <span class="caption-title"
+              >Sushi Supermarket / Branding &#38; Space</span
+            >
+          </a>
+          <span class="loading"></span>
+        </div>
+        <div
+          class="img-wrapper portrait branding-4 space-7"
+          style="background-image: url('../../img/thumb-13.jpg')"
+        >
+          <img
+            class="image"
+            data-hd="../../img/files/1/content-13.jpg"
+            src="../../img/thumb-13.jpg"
+            width="1200"
+            height="1800"
+          />
+          <a
+            class="caption s small-nav"
+            href="../../pages/project/13-seoyoosuk-cafe.html"
+          >
+            <span class="caption-title"
+              >카페 서유숙 / Branding &#38; Space</span
+            >
+          </a>
+          <span class="loading"></span>
+        </div>
+        <div
+          class="img-wrapper landscape"
+          style="background-image: url('../../img/thumb-14.jpg')"
+        >
+          <img
+            class="image"
+            data-hd="../../img/files/1/content-14.jpg"
+            src="../../img/thumb-14.jpg"
+            width="1581"
+            height="1265"
+          />
+          <a class="caption s small-nav" href="../../pages/project/14-clove.html">
+            <span class="caption-title">Clove / Pop up</span> </a
+          ><span class="loading"></span>
+        </div>
+        <div
+          class="img-wrapper portrait"
+          style="background-image: url('../../img/thumb-15.jpg')"
+        >
+          <img
+            class="image"
+            data-hd="../../img/files/1/content-15.jpg"
+            src="../../img/thumb-15.jpg"
+            width="1350"
+            height="1800"
+          />
+          <a class="caption s small-nav" href="../../pages/project/15-nylora.html">
+            <span class="caption-title">Nylora / Pop up</span>
+          </a>
+          <span class="loading"></span>
+        </div>
+        <div
+          class="img-wrapper portrait"
+          style="background-image: url('../../img/thumb-16.jpg')"
+        >
+          <img
+            class="image"
+            data-hd="../../img/files/1/content-16.jpg"
+            src="../../img/thumb-16.jpg"
+            width="1601"
+            height="2400"
+          />
+          <a
+            class="caption s small-nav"
+            href="../../pages/project/16-elle-josep.html"
+          >
+            <span class="caption-title">Elle - 조셉앤스테이시 / Styling</span>
+          </a>
+          <span class="loading"></span>
+        </div>
+        <div
+          class="img-wrapper portrait branding-5 space-8"
+          style="background-image: url('../../img/thumb-17.jpg')"
+        >
+          <img
+            class="image"
+            data-hd="../../img/files/1/content-17.jpg"
+            src="../../img/thumb-17.jpg"
+            width="1920"
+            height="2400"
+          />
+          <a class="caption s small-nav" href="../../pages/project/17-moani.html">
+            <span class="caption-title">모아니 / Branding &#38; Space</span>
+          </a>
+          <span class="loading"></span>
+        </div>
+        <div
+          class="img-wrapper landscape"
+          style="background-image: url('../../img/thumb-18.jpg')"
+        >
+          <img
+            class="image"
+            data-hd="../../img/files/1/content-18.jpg"
+            src="../../img/thumb-18.jpg"
+            width="3401"
+            height="2279"
+          />
+          <a
+            class="caption s small-nav"
+            href="../../pages/project/18-snoopy-garden-set.html"
+          >
+            <span class="caption-title"
+              >Snoopy garden - 가드닝 세트 / Product</span
+            >
+          </a>
+          <span class="loading"></span>
+        </div>
+        <div
+          class="img-wrapper portrait branding-6 space-9"
+          style="background-image: url('../../img/thumb-19.jpg')"
+        >
+          <img
+            class="image"
+            data-hd="../../img/files/1/content-19.jpg"
+            src="../../img/thumb-19.jpg"
+            width="1799"
+            height="2399"
+          />
+
+          <a
+            class="caption s small-nav"
+            href="../../pages/project/19-collectment.html"
+          >
+            <span class="caption-title">콜렉트먼트 / Branding &#38; Space</span>
+          </a>
+          <span class="loading"></span>
+        </div>
+        <div
+          class="img-wrapper portrait space-10"
+          style="background-image: url('../../img/thumb-20.jpg')"
+        >
+          <img
+            class="image"
+            data-hd="../../img/files/1/content-20.jpg"
+            src="../../img/thumb-20.jpg"
+            width="1799"
+            height="2400"
+          />
+          <a class="caption s small-nav" href="../../pages/project/20-farm11.html">
+            <span class="caption-title">Farm 11 / Branding &#38; Space</span>
+          </a>
+          <span class="loading"></span>
         </div>
       </div>
+    </div>
 
-      <video id="intro-v" preload="none" muted loop autoplay playsinline>
-        <source src="../../img/main/intro.mp4" type="video/mp4" />
-      </video>
-      <mark>Skip Intro</mark>
-
-      <div class="category-view">
-        <div class="category-view-1">Branding</div>
-        <div class="category-view-2">Space</div>
-        <div class="category-view-3">Pop-up</div>
-        <div class="category-view-4">Planting</div>
-        <div class="category-view-5">Exhibition</div>
-      </div>
-    </main>
-
-    <div class="grid">
-      <div
-        class="img-wrapper thumb-1"
-        style="background-image: url('../../img/thumb-1.jpg')"
-        onclick="location.href ='../../pages/project/1-nevertheless.html'"
-      >
-        <img class="image" src="../../img/files/1/content-1.jpg" />
-        <figcaption>그래도팜 / Space design</figcaption>
-      </div>
-      <div
-        class="img-wrapper thumb-2"
-        style="background-image: url('../../img/thumb-2.jpg')"
-        onclick="location.href ='../../pages/project/2-celine.html'"
-      >
-        <img class="image" src="../../img/files/1/content-2.jpg" />
-        <figcaption>Vogue 12월호 - Celine / Styling</figcaption>
-      </div>
-      <div
-        class="img-wrapper thumb-3"
-        style="background-image: url('../../img/thumb-3.jpg')"
-        onclick="location.href ='../../pages/project/3-lewest.html'"
-      >
-        <img class="image" src="../../img/files/1/content-3.jpg" />
-        <figcaption>LE WEST / Branding &#38; Wayfinding</figcaption>
-      </div>
-      <div
-        class="img-wrapper thumb-4"
-        style="background-image: url('../../img/thumb-4.jpg')"
-        onclick="location.href ='../../pages/project/4-snoopy-garden-school.html'"
-      >
-        <img class="image" src="../../img/files/1/content-4.jpg" />
-        <figcaption>Snoopy garden - 가드닝 스쿨 / Space</figcaption>
-      </div>
-      <div
-        class="img-wrapper thumb-5"
-        style="background-image: url('../../img/thumb-5.jpg')"
-        onclick="location.href ='../../pages/project/5-eenk.html'"
-      >
-        <img class="image" src="../../img/files/1/content-5.jpg" />
-        <figcaption>EENK 21FW / Styling</figcaption>
-      </div>
-      <div
-        class="img-wrapper thumb-6"
-        style="background-image: url('../../img/thumb-6.jpg')"
-        onclick="location.href ='../../pages/project/6-snoopy-garden-house.html'"
-      >
-        <img class="image" src="../../img/files/1/content-6.jpg" />
-        <figcaption>Snoopy garden - 도그 하우스 / Space</figcaption>
-      </div>
-      <div
-        class="img-wrapper thumb-7"
-        style="background-image: url('../../img/thumb-7.jpg')"
-        onclick="location.href ='../../pages/project/7-peer.html'"
-      >
-        <img class="image" src="../../img/files/1/content-7.jpg" />
-      
-        <figcaption>현대 Peer - Active Sports Club / Branding &#38; Pop up</figcaption>
-      </div>
-      <div
-        class="img-wrapper thumb-8"
-        style="background-image: url('../../img/thumb-8.jpg')"
-        onclick="location.href ='../../pages/project/8-switch.html'"
-      >
-        <img class="image" src="../../img/files/1/content-8.jpg" />
-        <figcaption>Switch 22 / Branding &#38; Space</figcaption>
-      </div>
-      <div
-        class="img-wrapper thumb-9"
-        style="background-image: url('../../img/thumb-9.jpg')"
-        onclick="location.href ='../../pages/project/9-beyondwall.html'"
-      >
-        <img class="image" src="../../img/files/1/content-9.jpg" />
-        <figcaption>Beyond Wall / Product</figcaption>
-      </div>
-      <div
-        class="img-wrapper thumb-10"
-        style="background-image: url('../../img/thumb-10.jpg')"
-        onclick="location.href ='../../pages/project/10-hermes.html'"
-      >
-        <img class="image" src="../../img/files/1/content-10.jpg" />
-        <figcaption>Elle 5월호 - Hermes / Styling</figcaption>
-      </div>
-      <div
-        class="img-wrapper thumb-11"
-        style="background-image: url('../../img/thumb-11.jpg')"
-        onclick="location.href ='../../pages/project/11-seoyoosuk-stay.html'"
-      >
-        <img class="image" src="../../img/files/1/content-11.jpg" />
-        <figcaption>스테이 서유숙 / Space</figcaption>
-      </div>
-      <div
-        class="img-wrapper thumb-12"
-        style="background-image: url('../../img/thumb-12.jpg')"
-        onclick="location.href ='../../pages/project/12-sushi.html'"
-      >
-        <img class="image" src="../../img/files/1/content-12.jpg" />
-        <figcaption>Sushi Supermarket / Branding &#38; Space</figcaption>
-      </div>
-      <div
-        class="img-wrapper thumb-13"
-        style="background-image: url('../../img/thumb-13.jpg')"
-        onclick="location.href ='../../pages/project/13-seoyoosuk-cafe.html'"
-      >
-        <img class="image" src="../../img/files/1/content-13.jpg" />
-        <figcaption>카페 서유숙 / Branding &#38; Space</figcaption>
-      </div>
-      <div
-        class="img-wrapper thumb-14"
-        style="background-image: url('../../img/thumb-14.jpg')"
-        onclick="location.href ='../../pages/project/14-clove.html'"
-      >
-        <img class="image" src="../../img/files/1/content-14.jpg" />
-        <figcaption>Clove / Pop up</figcaption>
-      </div>
-      <div
-        class="img-wrapper thumb-15"
-        style="background-image: url('../../img/thumb-15.jpg')"
-        onclick="location.href ='../../pages/project/15-nylora.html'"
-      >
-        <img class="image" src="../../img/files/1/content-15.jpg" />
-        <figcaption>Nylora / Pop up</figcaption>
-      </div>
-      <div
-        class="img-wrapper thumb-16"
-        style="background-image: url('../../img/thumb-16.jpg')"
-        onclick="location.href ='../../pages/project/16-elle-josep.html'"
-      >
-        <img class="image" src="../../img/files/1/content-16.jpg" />
-        <figcaption>Elle - 조셉앤스테이시 / Styling</figcaption>
-      </div>
-      <div
-        class="img-wrapper thumb-17"
-        style="background-image: url('../../img/thumb-17.jpg')"
-        onclick="location.href ='../../pages/project/17-moani.html'"
-      >
-        <img class="image" src="../../img/files/1/content-17.jpg" />
-        <figcaption>모아니 / Branding &#38; Space</figcaption>
-      </div>
-      <div
-        class="img-wrapper thumb-18"
-        style="background-image: url('../../img/thumb-18.jpg')"
-        onclick="location.href ='../../pages/project/18-snoopy-garden-set.html'"
-      >
-        <img class="image" src="../../img/files/1/content-18.jpg" />
-        <figcaption>Snoopy garden - 가드닝 세트 / Product</figcaption>
-      </div>
-      <div
-        class="img-wrapper thumb-19"
-        style="background-image: url('../../img/thumb-19.jpg')"
-        onclick="location.href ='../../pages/project/19-collectment.html'"
-      >
-        <img class="image" src="../../img/files/1/content-19.jpg" />
-        <figcaption>콜렉트먼트 / Branding &#38; Space</figcaption>
-      </div>
-      <div
-        class="img-wrapper thumb-20"
-        style="background-image: url('../../img/thumb-20.jpg')"
-        onclick="location.href ='../../pages/project/20-farm11.html'"
-      >
-        <img class="image" src="../../img/files/1/content-20.jpg" />
-        <figcaption>Farm 11 / Branding &#38; Space</figcaption>
+    <div class="formobile">
+      <div class="formobile-p">
+        데스크탑으로 접속해주세요. <br />
+        Please access the desktop.
       </div>
     </div>
 
     <script src="../../js/script.js"></script>
+    <script src="../../js/detectmobilebrowser.js"></script>
+    <script>
+      $(document).ready(function () {
+        var current_path = window.location.pathname;
+        $("body").each(function () {
+          var href = jQuery(this).attr("href");
+
+          if (current_path.includes(href) || href == current_path) {
+            $(this).parents("#intro-v").addClass("none");
+          }
+        });
+      });
+    </script>
     <script src="../../js/category.js"></script>
-    <script src="../../js/work.js"></script>
+
+    <script>
+      var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(
+        navigator.userAgent
+      )
+        ? true
+        : false;
+      $(window).resize(function () {
+        if ($(window).width() < 768 || isMobile == true) {
+          location.href = "./index.m.html";
+        }
+      });
+    </script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6K1PYBZGDS"
+    ></script>
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-6K1PYBZGDS");
+    </script>
   </body>
 </html>

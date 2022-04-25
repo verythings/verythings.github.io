@@ -31,20 +31,7 @@
       name="twitter:image"
       content="http://gyeon.org/verythings/assets/img/og-image.jpg"
     />
-    <script src="../../js/jquery.min.js"></script>
 
-    <script>
-      var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(
-        navigator.userAgent
-      )
-        ? true
-        : false;
-      $(window).resize(function () {
-        if ($(window).width() > 768) {
-          location.href = "./18-snoopy-garden-set.html";
-        }
-      });
-    </script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
@@ -52,7 +39,7 @@
     <link rel="stylesheet" href="../../css/pages.css" />
     <link rel="stylesheet" type="text/css" href="../../css/ipages.min.css" />
   </head>
-  <body>
+  <body style="background: rgb(93, 151, 163)">
     <main class="convert">
       <div class="logo blend">
         <a href="../../../index.m.html"><img src="../../img/logo.svg" /></a>
@@ -85,7 +72,7 @@
     </nav>
 
     <article>
-      <h1>snoopy garden<br />플라워 팟</h1>
+      <h1>스누피 화분</h1>
 
       <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -114,9 +101,9 @@
     <figure>
       <img
         alt=""
-        src="../../img/files/snoopy-garden-set/m_pages_1.jpg"
+        src="../../img/files/snoopy-garden/m_pages_10.jpg"
         id="pic"
-        
+        class="click"
       />
     </figure>
 
@@ -136,11 +123,15 @@
         </p>
       </section>
     </footer>
+
     <figure>
-      <a href="./17-moani.m.html"> prev project</a>
-      <a href="./19-collectment.m.html"> next project</a>
-      <div class="arrow is-left"></div>
-      <div class="arrow is-right"></div>
+      <a href="./17-moani.m.html">
+        <img class="arrow-left" src="../../img/left-arrow.png" />prev project</a
+      >
+      <a href="./19-collectment.m.html">
+        <img class="arrow-right" src="../../img/left-arrow.png" />next
+        project</a
+      >
     </figure>
 
     <div class="formobile">
@@ -150,22 +141,18 @@
       </div>
     </div>
 
+    <script src="../../js/jquery.min.js"></script>
+
     <script>
-      $(document).ready(function () {
-        $("figure a, .arrow").css("color", "rgb(0,0,0)");
-        $(function () {
-          $("figure img").on("click", function () {
-            $("body, html")
-              .css("background-color", "rgb(152,198,192)")
-              .css("color", "white");
-          });
-          $("figure img").on("click", function () {
-            $(".logo").css("filter", "invert(1)");
-          });
-          $("figure img").on("click", function () {
-            $("figure a, .arrow").css("color", "white");
-          });
-        });
+      var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(
+        navigator.userAgent
+      )
+        ? true
+        : false;
+      $(window).resize(function () {
+        if ($(window).width() > 768 || isMobile == false) {
+          location.href = "./18-snoopy-garden-set.html";
+        }
       });
     </script>
     <script type="text/javascript">
