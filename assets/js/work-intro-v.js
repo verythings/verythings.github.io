@@ -1,5 +1,4 @@
 window.onload = function () {
-  $(".grid").hide();
 
   setTimeout(function () {
     $("#intro-v").fadeOut(250);
@@ -8,21 +7,21 @@ window.onload = function () {
     $("mark").hide();
   }, 4200);
   setTimeout(function () {
-    $(".grid").fadeIn(1200);
+    $(".img-wrapper").fadeIn(1200);
   }, 4500);
 };
 
 $(function () {
   $("#intro-v").on("click", function () {
     $("mark").hide();
-    $(".grid").show();
+    $(".img-wrapper").show();
     $(this).hide();
   });
 });
 $(function () {
   $("mark").on("click", function () {
     $(this).hide();
-    $(".grid").show();
+    $(".img-wrapper").show();
     $("#intro-v").hide();
   });
 });

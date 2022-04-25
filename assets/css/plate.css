@@ -523,7 +523,7 @@ mark {
   background-size: 100%;
   background-size: cover;
   overflow: hidden;
-
+  display: none;
   cursor: pointer;
 }
 
