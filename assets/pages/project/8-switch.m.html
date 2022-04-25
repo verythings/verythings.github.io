@@ -31,7 +31,20 @@
       name="twitter:image"
       content="http://gyeon.org/verythings/assets/img/og-image.jpg"
     />
+    <script src="../../js/jquery.min.js"></script>
 
+    <script>
+      var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(
+        navigator.userAgent
+      )
+        ? true
+        : false;
+      $(window).resize(function () {
+        if ($(window).width() > 768) {
+          location.href = "./8-switch.html";
+        }
+      });
+    </script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
@@ -39,7 +52,7 @@
     <link rel="stylesheet" href="../../css/pages.css" />
     <link rel="stylesheet" type="text/css" href="../../css/ipages.min.css" />
   </head>
-  <body style="background-color: rgba(32, 46, 70)">
+  <body>
     <main class="convert">
       <div class="logo blend">
         <a href="../../../index.m.html"><img src="../../img/logo.svg" /></a>
@@ -103,7 +116,7 @@
         alt=""
         src="../../img/files/switch/m_pages_1.jpg"
         id="pic"
-        class="click"
+        
       />
     </figure>
 
@@ -124,14 +137,12 @@
     </footer>
 
     <figure>
-      <a href="./7-peer.m.html">
-        <img class="arrow-left" src="../../img/left-arrow.png" />prev project</a
-      >
-      <a href="./9-beyondwall.m.html">
-        <img class="arrow-right" src="../../img/left-arrow.png" />next
-        project</a
-      >
+      <a href="./7-peer.m.html"> prev project</a>
+      <a href="./9-beyondwall.m.html"> next project</a>
+      <div class="arrow is-left"></div>
+      <div class="arrow is-right"></div>
     </figure>
+
 
     <div class="formobile">
       <div class="formobile-p">
@@ -140,20 +151,24 @@
       </div>
     </div>
 
-    <script src="../../js/jquery.min.js"></script>
-    <script src="../../js/pdf.min.js"></script>
-    <script src="../../js/jquery.ipages.min.js"></script>
     <script>
-      var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(
-        navigator.userAgent
-      )
-        ? true
-        : false;
-      $(window).resize(function () {
-        if ($(window).width() > 768 || isMobile == false) {
-          location.href = "./8-switch.html";
-        }
+$(document).ready(function () {
+      $("figure a, .arrow").css("color", "rgb(0,0,0)");
+        $(function () {
+          $("figure img").on("click", function () {
+            $("body, html")
+            .css("background-color", "rgb(47,86,146)")
+              .css("color", "white");
+          });
+          $("figure img").on("click", function () {
+            $(".logo").css("filter", "invert(1)");
+          });
+          $("figure img").on("click", function () {
+            $("figure a, .arrow").css("color", "white");
+          });
+        });
       });
+
     </script>
     <script type="text/javascript">
       $(function () {

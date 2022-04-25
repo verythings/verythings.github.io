@@ -1,91 +1,29 @@
-
 $(function () {
   $(".category-view-1").on("click", function () {
-    $(".img-wrapper:nth-child(3)")
-      .animate({ opacity: "0.5" }, "slow")
-      .css({
-        background: "url(../img/files/1/content-3.jpg)",
-        "background-size": "cover",
-        "background-repeat": "no-repeat",
-      })
-
-      .animate({ opacity: "1" }, "slow");
-    $(".branding-2").fadeIn(1000).css({
-      background: "url(../img/files/1/content-7.jpg)",
-      "background-size": "cover",
-      "background-repeat": "no-repeat",
-    });
-    $(".branding-3").fadeIn(1000).css({
-      background: "url(../img/files/1/content-12.jpg)",
-      "background-size": "cover",
-      "background-repeat": "no-repeat",
-    });
-    $(".branding-4").fadeIn(1000).css({
-      background: "url(../img/files/1/content-13.jpg)",
-      "background-size": "cover",
-      "background-repeat": "no-repeat",
-    });
-    $(".branding-5").fadeIn(1000).css({
-      background: "url(../img/files/1/content-17.jpg)",
-      "background-size": "cover",
-      "background-repeat": "no-repeat",
-    });
-    $(".branding-6").fadeIn(1000).css({
-      background: "url(../img/files/1/content-19.jpg)",
-      "background-size": "cover",
-      "background-repeat": "no-repeat",
-    });
+    $(".img-wrapper").show();
+    $(this).addClass("active");
+    $(
+      ".img-wrapper:nth-child(1), .img-wrapper:nth-child(2), .img-wrapper:nth-child(4), .img-wrapper:nth-child(5), .img-wrapper:nth-child(6), .img-wrapper:nth-child(8), .img-wrapper:nth-child(9), .img-wrapper:nth-child(10), .img-wrapper:nth-child(11), .img-wrapper:nth-child(14), .img-wrapper:nth-child(15), .img-wrapper:nth-child(16), .img-wrapper:nth-child(18), .img-wrapper:nth-child(19), .img-wrapper:nth-child(20)"
+    ).toggle();
   });
 });
 
-/////
-
 $(function () {
   $(".category-view-2").on("click", function () {
-    $(".space-1").css({
-      background: "url(../img/files/1/content-1.jpg)",
-      "background-size": "cover",
-      "background-repeat": "no-repeat",
-    });
-    $(".space-3").css({
-      background: "url(../img/files/1/content-6.jpg)",
-      "background-size": "cover",
-      "background-repeat": "no-repeat",
-    });
-    $(".space-4").css({
-      background: "url(../img/files/1/content-8.jpg)",
-      "background-size": "cover",
-      "background-repeat": "no-repeat",
-    });
-    $(".space-5").css({
-      background: "url(../img/files/1/content-11.jpg)",
-      "background-size": "cover",
-      "background-repeat": "no-repeat",
-    });
-    $(".space-6").css({
-      background: "url(../img/files/1/content-12.jpg)",
-      "background-size": "cover",
-      "background-repeat": "no-repeat",
-    });
-    $(".space-7").css({
-      background: "url(../img/files/1/content-13.jpg)",
-      "background-size": "cover",
-      "background-repeat": "no-repeat",
-    });
-    $(".space-8").css({
-      background: "url(../img/files/1/content-17.jpg)",
-      "background-size": "cover",
-      "background-repeat": "no-repeat",
-    });
-    $(".space-9").css({
-      background: "url(../img/files/1/content-19.jpg)",
-      "background-size": "cover",
-      "background-repeat": "no-repeat",
-    });
-    $(".space-10").css({
-      background: "url(../img/files/1/content-20.jpg)",
-      "background-size": "cover",
-      "background-repeat": "no-repeat",
-    });
+    $(".img-wrapper").show();
+    $(this).addClass("active");
+    $(
+      ".img-wrapper:nth-child(2), .img-wrapper:nth-child(3), .img-wrapper:nth-child(4), .img-wrapper:nth-child(5), .img-wrapper:nth-child(7), .img-wrapper:nth-child(9), .img-wrapper:nth-child(10), .img-wrapper:nth-child(14), .img-wrapper:nth-child(15), .img-wrapper:nth-child(16), .img-wrapper:nth-child(18)"
+    ).toggle();
+  });
+});
+
+$(function () {
+  $(".category-view-3").on("click", function () {
+    $(".img-wrapper").show();
+    $(this).addClass("active");
+    $(
+      ".img-wrapper:nth-child(1), .img-wrapper:nth-child(2), .img-wrapper:nth-child(3), .img-wrapper:nth-child(4), .img-wrapper:nth-child(5), .img-wrapper:nth-child(6), .img-wrapper:nth-child(7), .img-wrapper:nth-child(8), .img-wrapper:nth-child(9), .img-wrapper:nth-child(10), .img-wrapper:nth-child(11), .img-wrapper:nth-child(12), .img-wrapper:nth-child(13), .img-wrapper:nth-child(16), .img-wrapper:nth-child(17), .img-wrapper:nth-child(18), .img-wrapper:nth-child(19), .img-wrapper:nth-child(20)"
+    ).toggle();
   });
 });
