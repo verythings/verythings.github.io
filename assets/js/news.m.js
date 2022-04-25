@@ -1,8 +1,13 @@
 $(function () {
   $(".top").on("click", function () {
-    $("body").animate({ scrollTop: $(this).offset().top - 100 }, 200);
-  });
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      $("body").animate({ scrollTop: $(this).offset().top + 100 }, 200);
+      return false;
+    }
+    });
+  
 });
+
 
 window.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll("details").forEach(function (item) {
