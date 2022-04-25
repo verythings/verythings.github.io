@@ -48,10 +48,10 @@ $(".img-wrapper.thumb-6")
 
 $(".img-wrapper.thumb-7")
   .mouseenter(function () {
-    $(".thumb-7 .image, .thumb-7 figcaption, .thumb-7 video").css("opacity", "1");
+    $(".thumb-7 .image, .thumb-7 figcaption").css("opacity", "1");
   })
   .mouseleave(function () {
-    $(".thumb-7 .image, .thumb-7 figcaption, .thumb-7 video").css("opacity", "0");
+    $(".thumb-7 .image, .thumb-7 figcaption").css("opacity", "0");
   });
 
 $(".img-wrapper.thumb-8")
