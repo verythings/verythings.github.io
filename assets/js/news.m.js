@@ -1,11 +1,11 @@
-$(document).on('touchstart', function() {
-  documentClick = true;
-});
-$(document).on('touchmove', function() {
-  documentClick = false;
-});
+// $(document).on("touchstart", function () {
+//   documentClick = true;
+// });
+// $(document).on("touchmove", function () {
+//   documentClick = false;
+// });
 $(function () {
-  $(".top").on("click touchend", function () {
+  $(".top").on("click touchstart", function () {
     $("body").animate({ scrollTop: $(this).offset().top }, 200);
   });
 });
