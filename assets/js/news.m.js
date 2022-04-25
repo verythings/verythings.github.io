@@ -1,6 +1,12 @@
+$(document).on('touchstart', function() {
+  documentClick = true;
+});
+$(document).on('touchmove', function() {
+  documentClick = false;
+});
 $(function () {
-  $(".top").on("click", function () {
-    $("body").animate({ scrollTop: $(this).offset().top + 100 }, 200);
+  $(".top").on("click touchend", function () {
+    $("body").animate({ scrollTop: $(this).offset().top }, 200);
   });
 });
 
