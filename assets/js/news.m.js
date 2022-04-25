@@ -1,18 +1,14 @@
-// $(function () {
-//   $(".top").on("click", function () {
-//     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-//       $("body").animate({ scrollTop: $(this).offset().top + 100 }, 200);
-//       return false;
-//     }
-//     });
-
-// });
-
 $(function () {
   $(".top").on("click", function () {
-    $.mobile.silentScroll(0);
+    $("body").animate({ scrollTop: $(this).offset().top + 100 }, 200);
   });
 });
+
+// $(function () {
+//   $(".top").on("click", function () {
+//     $.mobile.silentScroll(0);
+//   });
+// });
 
 window.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll("details").forEach(function (item) {
