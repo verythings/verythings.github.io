@@ -1,5 +1,5 @@
 $(function () {
-  $("li").on("click", function () {
+  $(".top").on("click", function () {
     setTimeout( function() {
       $("body").animate({ scrollTop: 0 }, 200);
     }, 100);
