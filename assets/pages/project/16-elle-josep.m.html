@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Verythings | Pages</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=0.8, shrink-to-fit=no viewport-fit=cover"
+    />
+    <meta name="description" content="Verythings" />
+    <meta name="keywords" content="Verythings" />
+    <meta itemprop="name" content="Verythings" />
+    <meta itemprop="description" content="Verythings" />
+    <meta itemprop="image" content="http://gyeon.org/verythings/assets/img/og-image.jpg" />
+    <meta property="og:url" content="verythings.org" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Verythings" />
+    <meta property="og:description" content="Verythings" />
+    <meta property="og:image" content="http://gyeon.org/verythings/assets/img/og-image.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Verythings" />
+    <meta name="twitter:description" content="Verythings" />
+    <meta name="twitter:image" content="http://gyeon.org/verythings/assets/img/og-image.jpg" />
+    <script src="../../js/jquery.min.js"></script>
+
+    <script>
+      var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)
+        ? true
+        : false;
+      $(window).resize(function () {
+        if ($(window).width() > 768) {
+          location.href = "./16-elle-josep.html";
+        }
+      });
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link rel="stylesheet" href="../../css/pages.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/ipages.min.css" />
+  </head>
+  <body>
+    <main class="convert">
+      <div class="logo blend">
+        <a href="../../../index.m.html"><img src="../../img/logo.svg" /></a>
+      </div>
+
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn invert" for="menu__toggle">
+          <span></span>
+        </label>
+
+        <ol class="menu__box">
+          <div class="header">
+            <div class="work-space">
+              <a href="../work/index.m.html">Work</a>
+            </div>
+            <div class="about-space">
+              <a href="../about/index.m.html">About</a>
+            </div>
+            <div class="news-space">
+              <a href="../news/index.m.html">News</a>
+            </div>
+          </div>
+        </ol>
+      </div>
+    </main>
+
+    <nav>
+      <div class="sticky"></div>
+    </nav>
+
+    <article>
+      <h1>
+        elle <br />
+        조셉앤스테이시
+      </h1>
+
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+        been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+        galley of type and scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+        passages, and more recently with desktop publishing software like Aldus PageMaker including
+        versions of Lorem Ipsum.
+        <br />
+        <br />
+      </p>
+      <p>
+        열락의 않는 두손을 무한한 낙원을 방황하여도, 그들의 부패뿐이다. 이상의 풀이 위하여, 뛰노는
+        듣는다. 옷을 있는 싸인 시들어 있으랴? 끓는 봄날의 그들의 꽃이 풀이 황금시대의 위하여서. 이상
+        갑 얼음이 하여도 끓는 봄바람이다. 그것은 보내는 얼마나 남는 인간은 칼이다. 긴지라 바이며,
+        이는 그들의 인생을 아니한 위하여, 풀밭에 있다. 물방아 인생에 찾아다녀도, 미인을 그들의
+        소금이라 부패뿐이다. 피어나기 광야에서 있는 이상의 갑 바로 그들의 피다.
+      </p>
+    </article>
+
+    <figure>
+      <img alt="" src="../../img/files/switch/m_pages_1.jpg" id="pic" />
+    </figure>
+
+    <footer>
+      <section>
+        <p>
+          Creative Direction: Sukkyung Yun<br />
+          Space: Bomi An, Kwanyoung Kim,<br />
+          Brand: Choonggeun Yun,<br />
+          &emsp;&emsp;&emsp;&nbsp;&nbsp;Yechan Choi, Takgeon Oh<br />
+          <br />
+        </p>
+        <p>
+          Client: NH<br />
+          Year: December 2021
+        </p>
+      </section>
+    </footer>
+
+    <figure>
+      <a href="./15-nylora.m.html"> prev project</a>
+      <a href="./17-moani.m.html"> next project</a>
+      <div class="arrow is-left"></div>
+      <div class="arrow is-right"></div>
+    </figure>
+
+    <div class="formobile">
+      <div class="formobile-p">
+        데스크탑으로 접속해주세요. <br />
+        Please access the desktop.
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        $("figure a, .arrow").css("color", "rgb(0,0,0)");
+        $(function () {
+          $("figure img").on("click", function () {
+            $("body, html").css("background-color", "rgb(214, 209, 161)").css("color", "white");
+          });
+          $("figure img").on("click", function () {
+            $(".logo").css("filter", "invert(1)");
+          });
+          $("figure img").on("click", function () {
+            $("figure a, .arrow").css("color", "white");
+          });
+        });
+      });
+    </script>
+    <script type="text/javascript">
+      $(function () {
+        let num = 0;
+        let imageName = [
+          "m_pages_2",
+          "m_pages_3",
+          "m_pages_4",
+          "m_pages_5",
+          "m_pages_6",
+          "m_pages_7",
+          "m_pages_8",
+          "m_pages_9",
+          "m_pages_10",
+          "m_pages_11",
+          "m_pages_12",
+          "m_pages_13",
+          "m_pages_14",
+          "m_pages_15",
+          "m_pages_16",
+          "m_pages_1",
+        ];
+        $("#pic").click(function () {
+          if (num == 15) num = 0;
+          else num++;
+          $(this).attr("src", "../../img/files/switch/" + imageName[num] + ".jpg");
+        });
+      });
+    </script>
+  </body>
+</html>
