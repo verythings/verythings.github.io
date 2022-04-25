@@ -25,23 +25,12 @@
 
     <script src="./assets/js/jquery.min.js"></script>
 
-    <script>
-      var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)
-        ? true
-        : false;
-      $(window).resize(function () {
-        var windowWidth = window.outerWidth;
-        if (windowWidth < 768 || isMobile == true) {
-          location.href = "./index.m.html";
-        }
-      });
-    </script>
-
     <link rel="stylesheet" href="./assets/css/substyle.css" />
+    <link rel="stylesheet" href="./assets/css/substyle.m.css" />
   </head>
 
   <body class="home custom-cursor">
-    <main>
+    <main class="desktop">
       <div class="logo">
         <a href="./index.html"><img src="./assets/img/logo.svg" /></a>
       </div>
@@ -56,6 +45,33 @@
         <div class="news-space">
           <a href="./assets/pages/news">News</a>
         </div>
+      </div>
+    </main>
+
+    <main class="mobile">
+      <div class="logo">
+        <a href="./index.m.html"><img src="./assets/img/logo.svg" /></a>
+      </div>
+
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+
+        <ol class="menu__box">
+          <div class="header">
+            <div class="work-space">
+              <a href="./assets/pages/work/index.m.html">Work</a>
+            </div>
+            <div class="about-space">
+              <a href="./assets/pages/about/index.m.html">About</a>
+            </div>
+            <div class="news-space">
+              <a href="./assets/pages/news/index.m.html">News</a>
+            </div>
+          </div>
+        </ol>
       </div>
     </main>
 
