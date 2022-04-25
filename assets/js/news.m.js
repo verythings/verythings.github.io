@@ -1,7 +1,6 @@
 $(function () {
-  $("summary").on("click", function () {
-    $("body").stop().animate({ scrollTop: 0 }, 500);
-
+  $(".top").on("click", function () {
+    $("body").animate({ scrollTop: $(this).offset().top - 100 }, 200);
   });
 });
 
