@@ -1,7 +1,7 @@
 $(function () {
   $(".top").on("click", function () {
     setTimeout( function() {
-      $("body").animate({ scrollTop: 0 }, 200);
+      $("body, html").animate({ scrollTop: 0 }, 200);
     }, 100);
   });
 });
