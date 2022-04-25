@@ -32,7 +32,8 @@
         ? true
         : false;
       $(window).resize(function () {
-        if (isMobile == false) {
+        var windowWidth = window.outerWidth;
+        if (windowWidth <= 768 || isMobile == false) {
           location.href = "./index.html";
         }
       });

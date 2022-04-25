@@ -30,7 +30,7 @@
         ? true
         : false;
       $(window).resize(function () {
-        if (isMobile == true) {
+        if (windowWidth <= 768 || isMobile == true) {
           location.href = "./index.html";
         }
       });
