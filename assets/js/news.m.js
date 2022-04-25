@@ -1,5 +1,5 @@
 $(function () {
-  $(".top").on("click", function () {
+  $("summary").on("click", function () {
     $("body").stop().animate({ scrollTop: 0 }, 500);
 
   });
