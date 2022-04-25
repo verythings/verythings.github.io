@@ -8,14 +8,9 @@
 
 // });
 
-jQuery(document).ready(function () {
-  // $(".top").mouseup(function () {
-      $(".top").on("click", function () {
-    if (
-      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
-    ) {
-      $.mobile.silentScroll(100);
-    }
+$(function () {
+  $(".top").on("click", function () {
+    $.mobile.silentScroll(0);
   });
 });
 
