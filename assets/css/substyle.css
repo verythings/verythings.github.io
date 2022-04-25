@@ -305,6 +305,10 @@ footer mark {
   z-index: 10;
 }
 
+.desktop {
+  display: none;
+}
+
 @media (min-width: 300px) {
   .logo {
     width: 9rem;
@@ -345,6 +349,14 @@ footer mark {
   }
 }
 @media (min-width: 576px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
   .logo {
     width: 12rem;
   }
@@ -374,6 +386,14 @@ footer mark {
   }
 }
 @media (min-width: 768px) {
+  .desktop {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
   .logo {
     width: 13rem;
   }
