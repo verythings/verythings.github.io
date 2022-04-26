@@ -15,7 +15,7 @@ $(document).ready(function () //When the page is ready, load function
   {
     $("body,html").animate(
       {
-        scrollTop: 0, // Scroll to top of body
+        scrollTop: $(this).offset().top + 'px'
       },
       400
     ); //how fast the scrolling animation will be in miliseconds
