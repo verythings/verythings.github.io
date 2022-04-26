@@ -545,7 +545,7 @@ article section:nth-child(2) {
 
   footer {
     word-break: keep-all;
-    padding-bottom: 4rem;
+    padding-bottom: 6rem;
     margin-top: 3rem;
     margin-left: 1.5rem;
   }
@@ -561,7 +561,7 @@ article section:nth-child(2) {
     height: 0.7rem;
     width: 0.7rem;
 
-    bottom: 2.75rem;
+    bottom: 3.75rem;
   }
 
   .arrow::after {
@@ -593,7 +593,7 @@ article section:nth-child(2) {
     position: relative;
     float: left;
 
-    bottom: 2.8rem;
+    bottom: 3.8rem;
     color: #fff;
 
     font-size: 0.5rem;
@@ -603,7 +603,7 @@ article section:nth-child(2) {
     position: relative;
     float: right;
 
-    bottom: 2.8rem;
+    bottom: 3.8rem;
     color: #fff;
 
     font-size: 0.5rem;
