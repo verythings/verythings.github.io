@@ -611,12 +611,12 @@ article section:nth-child(2) {
   .arrow.is-left {
     transform: rotate(135deg);
     float: left;
-    left: -5rem;
+    left: -18.5vw;
   }
   .arrow.is-right {
     transform: rotate(-45deg);
     float: right;
-    right: -5rem;
+    right: -18.5vw;
   }
 
   figure a:nth-child(1) {
