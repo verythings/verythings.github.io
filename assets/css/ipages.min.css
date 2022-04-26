@@ -436,7 +436,7 @@
   /* pointer-events: none; */
   cursor: pointer;
   z-index: 1;
-} 
+}
 
 @media (min-width: 300px) {
   .ipgs-theme-default .ipgs-next-page,
