@@ -516,38 +516,7 @@ article section:nth-child(2) {
     grid-row: 8;
   }
 
-  .arrow {
-    position: fixed;
-    display: inline-block;
-    margin: 22.5px;
-    height: 0.7rem;
-    width: 0.7rem;
-
-    bottom: 1.5rem;
-  }
-
-  .arrow::after {
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
-    border-right-style: solid;
-    border-right-width: 2px;
-    content: "";
-    display: inline-block;
-    height: 0.7rem;
-    width: 0.7rem;
-    left: 0;
-    position: absolute;
-    top: 0;
-  }
-
-  .arrow.is-left {
-    transform: rotate(135deg);
-    left: 0;
-  }
-  .arrow.is-right {
-    transform: rotate(-45deg);
-    right: 0;
-  }
+ 
 
   article {
     font-size: 0.9rem;
@@ -579,7 +548,7 @@ article section:nth-child(2) {
 
   footer {
     word-break: keep-all;
-    padding-bottom: 6rem;
+    padding-bottom: 4rem;
     margin-top: 3rem;
     margin-left: 1.5rem;
   }
@@ -588,19 +557,57 @@ article section:nth-child(2) {
     border: 1px solid #333;
   }
 
-  figure a:nth-child(1) {
-    position: fixed;
-    left: 2.1rem;
+  .arrow {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    height: 0.7rem;
+    width: 0.7rem;
+
     bottom: 2.75rem;
+  }
+
+  .arrow::after {
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-right-style: solid;
+    border-right-width: 2px;
+    content: "";
+    display: inline-block;
+    height: 0.7rem;
+    width: 0.7rem;
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+
+  .arrow.is-left {
+    transform: rotate(135deg);
+    float: left;
+    left: -5rem;
+  }
+  .arrow.is-right {
+    transform: rotate(-45deg);
+    float: right;
+    right: -5rem;
+  }
+
+
+  figure a:nth-child(1) {
+    position: relative;
+    float: left;
+
+    bottom: 2.8rem;
     color: #fff;
 
     font-size: 0.5rem;
     text-transform: uppercase;
   }
   figure a:nth-child(2) {
-    position: fixed;
-    right: 2.1rem;
-    bottom: 2.75rem;
+    position: relative;
+    float: right;
+
+    bottom: 2.8rem;
     color: #fff;
 
     font-size: 0.5rem;
@@ -640,16 +647,39 @@ article section:nth-child(2) {
     grid-column: 2;
   }
 
+
   .arrow {
+    position: fixed;
+    display: inline-block;
     top: calc(50% - 2rem);
     margin: 24px;
     height: 1rem;
     width: 1rem;
+
+    bottom: 1.5rem;
   }
 
   .arrow::after {
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-right-style: solid;
+    border-right-width: 2px;
+    content: "";
+    display: inline-block;
     height: 1rem;
     width: 1rem;
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+
+  .arrow.is-left {
+    transform: rotate(135deg);
+    left: 0;
+  }
+  .arrow.is-right {
+    transform: rotate(-45deg);
+    right: 0;
   }
 
   figure a:nth-child(1) {
