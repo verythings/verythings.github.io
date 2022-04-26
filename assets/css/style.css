@@ -3851,6 +3851,10 @@ figcaption sub {
   transform: translateY(-50%);
 }
 
+.bm{
+  transform: translateY(-60%);
+}
+
 /* media query */
 
 /* media query */
