@@ -13,7 +13,7 @@ $(document).ready(function () //When the page is ready, load function
 {
   $("li details").click(function () // When arrow is clicked
   {
-    $("body,html").animate(
+    $("body").animate(
       {
         scrollTop: $(this).offset().top + "px",
       },
