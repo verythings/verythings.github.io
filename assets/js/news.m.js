@@ -1,9 +1,13 @@
-$(function () {
-  $(".top").on("click", function () {
-    setTimeout( function() {
-      $("body, html").animate({ scrollTop: 0 }, 200);
-    }, 100);
-  });
+$("li").click(function () {
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    $("html, body").animate(
+      {
+        scrollTop: 0,
+      },
+      600
+    );
+    return false;
+  }
 });
 
 // $(document).on('touchstart', function() {
