@@ -74,10 +74,10 @@ p {
   word-break: keep-all;
 }
 
-video {
+/* video {
   min-height: 100vh;
   min-height: -webkit-fill-available;
-}
+} */
 
 #intro-video {
   position: absolute;
@@ -337,13 +337,10 @@ summary:last-child {
   margin-bottom: 2rem;
 }
 
-.section {
-  padding-bottom: 0.5rem;
-}
-
 details img {
   width: 100%;
   display: block;
+  margin-top: -0.5rem;
 }
 
 .content {
