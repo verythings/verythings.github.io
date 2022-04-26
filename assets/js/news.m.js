@@ -11,11 +11,11 @@
 
 $(document).ready(function () //When the page is ready, load function
 {
-  $("#return_to_top").click(function () // When arrow is clicked
+  $("li details").click(function () // When arrow is clicked
   {
     $("body,html").animate(
       {
-        scrollTop: $(this).offset().top + 'px'
+        scrollTop: $(this).offset().top + "px",
       },
       400
     ); //how fast the scrolling animation will be in miliseconds
