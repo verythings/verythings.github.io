@@ -585,6 +585,10 @@ article section:nth-child(2) {
     margin-left: 1.5rem;
   }
 
+  figure img {
+    border: 1px solid #333;
+  }
+
   figure a:nth-child(1) {
     position: fixed;
     left: 2.1rem;
