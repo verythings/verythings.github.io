@@ -1,13 +1,25 @@
-$("li").click(function () {
-  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    $("html, body").animate(
+// $("li").click(function () {
+//   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+//     $("html, body").animate(
+//       {
+//         scrollTop: 0,
+//       },
+//       400
+//     );
+//   }
+// });
+
+$(document).ready(function () //When the page is ready, load function
+{
+  $("#return_to_top").click(function () // When arrow is clicked
+  {
+    $("body,html").animate(
       {
-        scrollTop: 0,
+        scrollTop: 0, // Scroll to top of body
       },
-      600
-    );
-    return false;
-  }
+      400
+    ); //how fast the scrolling animation will be in miliseconds
+  });
 });
 
 // $(document).on('touchstart', function() {
