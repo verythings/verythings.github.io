@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $("summary").click(function () {
+  $("body").click(function () {
     $("body").animate(
       {
         scrollTop: $(this).offset().top + "px",
