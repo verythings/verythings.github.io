@@ -1,24 +1,11 @@
-// $("li").click(function () {
-//   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-//     $("html, body").animate(
-//       {
-//         scrollTop: 0,
-//       },
-//       400
-//     );
-//   }
-// });
-
-$(document).ready(function () //When the page is ready, load function
-{
-  $("summary").click(function () // When arrow is clicked
-  {
+$(document).ready(function () {
+  $("summary").click(function () {
     $("body").animate(
       {
         scrollTop: $(this).offset().top + "px",
       },
       400
-    ); //how fast the scrolling animation will be in miliseconds
+    );
   });
 });
 
