@@ -21,7 +21,6 @@
 
 html,
 body {
-
   overflow-x: hidden;
 }
 
@@ -327,7 +326,7 @@ li:first-of-type {
 summary {
   font-size: 1rem;
   line-height: 1.6;
-  padding: 1.5rem 0.5rem 3rem 0.5rem;
+  padding: 1.25rem 0.375rem 2.5rem 0.375rem;
   margin: 0 1rem;
   list-style: decimal;
 }
