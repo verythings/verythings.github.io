@@ -554,6 +554,36 @@ article section:nth-child(2) {
     border: 1px solid #333;
   }
 
+  .book-arrow {
+    position: relative;
+    display: inline-block;
+    left: calc(100% - 3rem);
+    height: 2.75rem;
+    width: 2.75rem;
+
+    top: 30vw;
+    z-index: 10;
+  }
+
+  .book-arrow::after {
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-right-style: solid;
+    border-right-width: 2px;
+    content: "";
+    display: inline-block;
+    height: 2.75rem;
+    width: 2.75rem;
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+
+  .book-arrow.is-right {
+    transform: rotate(-45deg);
+    right: 2rem;
+  }
+
   .arrow {
     position: relative;
     display: inline-block;
@@ -596,7 +626,7 @@ article section:nth-child(2) {
     bottom: 3.8rem;
     color: #fff;
 
-    font-size: 0.5rem;
+    font-size: 0.55rem;
     text-transform: uppercase;
   }
   figure a:nth-child(2) {
@@ -606,7 +636,7 @@ article section:nth-child(2) {
     bottom: 3.8rem;
     color: #fff;
 
-    font-size: 0.5rem;
+    font-size: 0.55rem;
     text-transform: uppercase;
   }
 }
