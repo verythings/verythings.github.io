@@ -676,7 +676,7 @@ article section:nth-child(2) {
   .arrow {
     position: fixed;
     display: inline-block;
-    top: calc(50% - 2rem);
+    top: calc(50% + 2rem);
     margin: 24px;
     height: 1rem;
     width: 1rem;
@@ -710,14 +710,14 @@ article section:nth-child(2) {
   figure a:nth-child(1) {
     position: fixed;
     left: 2.5rem;
-    bottom: calc(50% - 0.75rem);
+    top: calc(50% + 3.375rem);
     font-size: 0.85rem;
     text-transform: uppercase;
   }
   figure a:nth-child(2) {
     position: fixed;
     right: 2.5rem;
-    bottom: calc(50% - 0.75rem);
+    top: calc(50% + 3.375rem);
     font-size: 0.85rem;
     text-transform: uppercase;
   }
