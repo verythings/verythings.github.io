@@ -28,6 +28,8 @@ $(function () {
     $(
       ".click"
     ).css("filter", "invert(1)");
+    $(
+      ".ipgs-theme-default .ipgs-next-page, .ipgs-theme-default .ipgs-prev-page"
+    ).css("transform", "translate3D(0, -50%, 0)");
   });
 });
-
