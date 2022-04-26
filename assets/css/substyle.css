@@ -310,6 +310,15 @@ footer mark {
 }
 
 @media (min-width: 300px) {
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+  
   .logo {
     width: 9rem;
   }
