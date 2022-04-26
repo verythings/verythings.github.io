@@ -479,8 +479,8 @@ article section:nth-child(2) {
   transform: translate(-50%, -50%);
   z-index: 50;
 
-  cursor: pointer;
   display: none;
+
 }
 
 /* media query */

@@ -426,7 +426,7 @@
   position: absolute;
   display: block;
   top: 50%;
-  width: 50%;
+  width: 48%;
   height: 150%;
   -webkit-transform: translate3D(-50%, -50%, 0);
   transform: translate3D(-50%, -50%, 0);
@@ -436,8 +436,7 @@
   /* pointer-events: none; */
   cursor: pointer;
   z-index: 1;
-}
-
+} 
 
 @media (min-width: 300px) {
   .ipgs-theme-default .ipgs-next-page,
