@@ -81,7 +81,7 @@ p {
 #intro-video {
   position: absolute;
   width: 100%;
-  height: calc(100% + 144px);
+  height: 100%;
 
   object-fit: cover;
 
