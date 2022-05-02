@@ -477,7 +477,7 @@ article section:nth-child(2) {
 
 .click {
   position: absolute;
-  width: 5%;
+  width: 4%;
   content: url(../img/click.png);
   top: 50%;
   right: 50%;
