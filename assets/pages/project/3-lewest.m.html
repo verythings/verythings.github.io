@@ -109,6 +109,8 @@
         <input id="menu__toggle" type="checkbox" />
         <label class="menu__btn invert" for="menu__toggle">
           <span></span>
+          <span></span>
+          <span></span>
         </label>
 
         <ol class="menu__box">
@@ -187,6 +189,11 @@
       $(document).ready(function () {
 
       $("body, figure a, .arrow").css("color", "rgb(208,172,103)");
+
+      $("span, span::before, span::after").css("background-color", "rgb(208,172,103)");
+
+  
+
         $(function () {
           $("figure img").on("click", function () {
             $("body, html")
@@ -202,6 +209,15 @@
           $("figure img").on("click", function () {
           $("#Layer_2").css("fill", "white");
         });
+
+        $("figure img").on("click", function () {
+          $("span, span::before, span::after").css("background", "white");
+        });
+
+
+        
+
+        
         });
       });
 
