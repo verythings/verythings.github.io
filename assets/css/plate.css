@@ -324,6 +324,7 @@ body {
 .category-view-4:hover,
 .category-view-5:hover {
   text-decoration: underline;
+  text-underline-position: under;
   opacity: 0.9;
 }
 .work-space {
@@ -385,13 +386,13 @@ body {
 .work-space:hover,
 .about-space:hover,
 .news-space:hover {
-  text-decoration: underline;
+  color: silver;
   opacity: 0.9;
 }
 .work-space-l:hover,
 .about-space-l:hover,
 .news-space-l:hover {
-  text-decoration: underline;
+  color: silver;
   opacity: 0.9;
 }
 
