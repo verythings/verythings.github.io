@@ -236,6 +236,11 @@ article section p {
   display: block;
 }
 
+p.en {
+  line-height: 1.58;
+  font-size: 99%;
+}
+
 .emphasis-kr,
 .emphasis-en {
   display: inline;

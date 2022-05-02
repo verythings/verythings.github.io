@@ -425,11 +425,6 @@ figcaption {
   margin-left: 0.75rem;
 }
 
-article p {
-  max-width: 90ch;
-  word-break: keep-all;
-}
-
 article {
   line-height: 1.68;
   word-break: keep-all;
@@ -442,6 +437,16 @@ article {
   height: auto;
 
   margin: 10rem 1.75rem;
+}
+
+article p {
+  max-width: 90ch;
+  word-break: keep-all;
+}
+
+article p.en {
+  line-height: 1.58;
+  font-size: 99%;
 }
 
 article h1 {
@@ -467,7 +472,7 @@ article section:nth-child(2) {
 #pic {
   width: 100%;
   transform: scale(1.1);
-  margin-top: 2rem;
+  margin: 4rem 0;
 }
 
 .click {
@@ -480,7 +485,6 @@ article section:nth-child(2) {
   z-index: 50;
 
   display: none;
-
 }
 
 /* media query */
@@ -658,7 +662,6 @@ article section:nth-child(2) {
     right: -18.5vw;
   }
 }
-
 
 @media (min-width: 576px) {
   .logo {

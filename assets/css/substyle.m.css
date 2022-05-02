@@ -112,6 +112,11 @@ p {
   z-index: 10;
 }
 
+p.en {
+  line-height: 1.58;
+  font-size: 99%;
+}
+
 @media (min-width: 300px) {
   .logo {
     width: 9rem;
@@ -133,6 +138,8 @@ p {
     max-width: 90%;
     display: block;
   }
+
+  
 
   article section:nth-child(1) {
     grid-column: 1 / 1;
