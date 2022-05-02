@@ -424,7 +424,7 @@ body {
     width: auto;
     top: 4rem;
     font-size: 1rem;
-    right: 1.5rem;
+    right: 1rem;
     left: inherit;
   }
 
@@ -452,7 +452,7 @@ body {
   .category-view {
     top: 4.25rem;
     font-size: 1rem;
-    right: 2.25rem;
+    right: 1.75rem;
   }
 
   .header {
