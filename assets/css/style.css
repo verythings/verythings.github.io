@@ -2734,8 +2734,7 @@ body {
   font-family: "SuisseIntl-Book", "Pretendard", sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  background-color: rgba(241, 225, 147);
-
+  background-color: rgb(235, 221, 153);
   color: white;
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -3483,7 +3482,7 @@ a.selected {
 nav {
   width: 100%;
   height: 150px;
-  background-color: rgba(241, 225, 147);
+  background-color: rgba(235, 221, 153);
 
   position: sticky;
   top: 0px;
@@ -3761,7 +3760,7 @@ article .img-container {
   height: 100%;
   margin: 0;
   list-style: none;
-  background-color: rgba(241, 225, 147);
+  background-color: rgba(235, 221, 153);
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
   transition-duration: 0.5s;
   z-index: 10;
