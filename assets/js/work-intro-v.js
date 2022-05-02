@@ -1,19 +1,19 @@
 window.onload = function () {
   setTimeout(function () {
     $("body").css("overflow", "auto");
-  }, 4200);
+  }, 4000);
 
   setTimeout(function () {
     $("#intro-v").fadeOut(250);
-  }, 4200);
+  }, 4000);
 
   setTimeout(function () {
     $("mark").hide();
-  }, 4200);
+  }, 4000);
 
   setTimeout(function () {
-    $(".img-wrapper").fadeIn(1200);
-  }, 4500);
+    $(".img-wrapper").fadeIn(800);
+  }, 4200);
 };
 
 $(function () {
