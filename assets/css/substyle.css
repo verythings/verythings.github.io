@@ -128,7 +128,6 @@ video {
 nav {
   width: 100%;
   height: 10rem;
-  background-color: rgba(235, 221, 153);
 
   position: sticky;
   top: 0px;
@@ -215,7 +214,10 @@ article {
   column-gap: 2.75rem;
 
   overflow: auto;
-  height: auto;
+}
+
+article.about {
+  height: 100%;
 }
 
 article section {
@@ -234,6 +236,23 @@ article section:nth-child(2) {
 
 article section p {
   display: block;
+}
+
+.background-box {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 49% 51%;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: saturation;
+  z-index: -1;
+}
+
+.background-box div:nth-child(1) {
+  background-color: rgb(244, 255, 227);
+}
+.background-box div:nth-child(2) {
+  background-color: rgb(255, 255, 159);
 }
 
 p.en {
@@ -315,7 +334,6 @@ footer mark {
 }
 
 @media (min-width: 300px) {
-
   .desktop {
     display: none;
   }
@@ -323,7 +341,7 @@ footer mark {
   .mobile {
     display: block;
   }
-  
+
   .logo {
     width: 9rem;
   }
