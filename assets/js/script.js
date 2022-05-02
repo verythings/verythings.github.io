@@ -20,7 +20,7 @@ $(document).ready(function () {
 });
 
 $(window).mousemove(function (event) {
-  $(".click").css({ left: event.pageX + 60, top: event.pageY - 5});
+  $(".click").css({ left: event.pageX + 55, top: event.pageY - 5});
 });
 
 $(function () {
