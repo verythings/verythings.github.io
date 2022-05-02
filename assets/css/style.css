@@ -96,7 +96,7 @@ small {
 }
 sub,
 sup {
-  font-size: 75%;
+  font-size: 80%;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
@@ -3763,7 +3763,7 @@ article .img-container {
   list-style: none;
   background-color: rgba(235, 221, 153);
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
-  transition-duration: 0.5s;
+  transition-duration: 0.25s;
   z-index: 10;
 }
 .menu__item {
@@ -3773,7 +3773,7 @@ article .img-container {
   font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
-  transition-duration: 0.5s;
+  transition-duration: 0.25s;
 }
 .menu__item:hover {
   background-color: #ddd;
