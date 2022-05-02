@@ -151,6 +151,7 @@ p.en {
 
   article footer {
     position: relative;
+    margin-top: 4rem;
     font-size: 1rem;
     bottom: 1rem;
   }
@@ -570,11 +571,6 @@ nav div .sticky {
     grid-column: 1 / 2;
   }
 
-  article footer {
-    position: relative;
-    font-size: 1rem;
-    bottom: 1rem;
-  }
 }
 /* hamburger-menu */
 
