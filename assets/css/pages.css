@@ -595,7 +595,7 @@ article section:nth-child(2) {
     height: 0.7rem;
     width: 0.7rem;
 
-    bottom: 6.75rem;
+    bottom: 8.75rem;
   }
 
   .arrow::after {
@@ -627,7 +627,7 @@ article section:nth-child(2) {
     position: relative;
     float: left;
 
-    bottom: 6.8rem;
+    bottom: 8.8rem;
     color: #fff;
 
     font-size: 0.55rem;
@@ -637,7 +637,7 @@ article section:nth-child(2) {
     position: relative;
     float: right;
 
-    bottom: 6.8rem;
+    bottom: 8.8rem;
     color: #fff;
 
     font-size: 0.55rem;
