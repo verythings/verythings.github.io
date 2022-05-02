@@ -57,7 +57,7 @@ body {
   color: #000;
 
   overflow: auto;
-  transition: all 0.25s;
+  transition: all 0.125s;
 }
 
 a {
@@ -375,7 +375,7 @@ footer div {
   width: 100%;
   height: 2.5px;
   background-color: #fff;
-  transition-duration: 0.25s;
+  transition-duration: 0.125s;
 }
 .menu__btn > span::before {
   content: "";
@@ -611,12 +611,12 @@ article section:nth-child(2) {
   .arrow.is-left {
     transform: rotate(135deg);
     float: left;
-    left: -18.5vw;
+    left: -25vw;
   }
   .arrow.is-right {
     transform: rotate(-45deg);
     float: right;
-    right: -18.5vw;
+    right: -25vw;
   }
 
   figure a:nth-child(1) {
@@ -640,6 +640,26 @@ article section:nth-child(2) {
     text-transform: uppercase;
   }
 }
+
+@media (min-width: 375px) {
+  .arrow.is-left {
+    left: -21vw;
+  }
+  .arrow.is-right {
+    right: -21vw;
+  }
+}
+
+@media (min-width: 414px) {
+  .arrow.is-left {
+    left: -18.5vw;
+  }
+  .arrow.is-right {
+    right: -18.5vw;
+  }
+}
+
+
 @media (min-width: 576px) {
   .logo {
     width: 12rem;
@@ -676,7 +696,7 @@ article section:nth-child(2) {
   .arrow {
     position: fixed;
     display: inline-block;
-    top: calc(50% + 2.125rem);
+    top: calc(70% + 2.125rem);
     margin: 24px;
     height: 0.75rem;
     width: 0.75rem;
@@ -710,7 +730,7 @@ article section:nth-child(2) {
   figure a:nth-child(1) {
     position: fixed;
     left: 2.5rem;
-    top: calc(50% + 3.375rem);
+    top: calc(70% + 3.375rem);
     font-size: 0.85rem;
     text-transform: uppercase;
     bottom: inherit;
@@ -718,7 +738,7 @@ article section:nth-child(2) {
   figure a:nth-child(2) {
     position: fixed;
     right: 2.5rem;
-    top: calc(50% + 3.375rem);
+    top: calc(70% + 3.375rem);
     font-size: 0.85rem;
     text-transform: uppercase;
     bottom: inherit;
