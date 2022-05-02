@@ -95,7 +95,7 @@ p {
   width: 15rem;
   top: 1.75rem;
   left: 1.5rem;
-  filter: invert(1) drop-shadow(0 0 0.25rem #999);
+  filter: invert(1);
   z-index: 10002 !important;
 }
 
