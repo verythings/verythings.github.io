@@ -88,7 +88,7 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
+  font-family: monospace;
   font-size: 1em;
 }
 small {
@@ -3836,7 +3836,6 @@ figcaption sub {
 /* media query */
 
 @media (min-width: 300px) {
-
   .logo {
     filter: invert(1) drop-shadow(0 0 0.25rem #999);
     left: 1.25rem;

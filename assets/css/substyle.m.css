@@ -642,7 +642,7 @@ nav div .sticky {
   list-style: none;
   background-color: rgba(235, 221, 153);
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
-  transition-duration: 0.5s;
+  transition-duration: 0.25s;
   z-index: 10;
 }
 .menu__item {
@@ -652,7 +652,7 @@ nav div .sticky {
   font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
-  transition-duration: 0.5s;
+  transition-duration: 0.25s;
 }
 .menu__item:hover {
   background-color: #ddd;
