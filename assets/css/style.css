@@ -23,6 +23,7 @@ html,
 body {
   height: 100%;
   -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden;
 }
 
 html {
@@ -3661,7 +3662,7 @@ nav div .sticky {
 /* work mobile */
 
 article {
-  overflow: auto;
+  overflow-x: hidden;
 }
 
 article .img-container {
@@ -3835,6 +3836,7 @@ figcaption sub {
 /* media query */
 
 @media (min-width: 300px) {
+
   .logo {
     filter: invert(1) drop-shadow(0 0 0.25rem #999);
     left: 1.25rem;
