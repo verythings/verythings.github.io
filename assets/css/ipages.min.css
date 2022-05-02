@@ -434,7 +434,6 @@
   background-repeat: no-repeat;
   opacity: 0;
   /* pointer-events: none; */
-  cursor: pointer;
   z-index: 1;
 }
 
@@ -517,7 +516,6 @@
   background-color: rgba(0, 0, 0, 0.5);
   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCIgd2lkdGg9IjI2LjY2NyIgaGVpZ2h0PSIyNi42NjciPjxkZWZzPjxjbGlwUGF0aCBpZD0iQSI+PHBhdGggZD0iTTAgMGgyMHYyMEgweiIvPjwvY2xpcFBhdGg+PC9kZWZzPjxnIGNsaXAtcGF0aD0idXJsKCNBKSI+PHBhdGggZD0iTTEwIDguNTg2bC03LjA3LTcuMDdMMS41MTUgMi45MyA4LjU4NiAxMGwtNy4wNyA3LjA3IDEuNDE0IDEuNDE0IDcuMDctNy4wNyA3LjA3IDcuMDcgMS40MTQtMS40MTQtNy4wNy03LjA3IDcuMDctNy4wNy0xLjQxNC0xLjQxNEwxMCA4LjU4NnoiIGZpbGw9IiNmZmYiLz48L2c+PC9zdmc+);
   background-size: contain;
-  cursor: pointer;
 }
 .ipgs-theme-default .ipgs-thumbnails .ipgs-thumbs-wrap {
   width: 100%;
@@ -537,7 +535,6 @@
   border: 1px solid rgba(0, 0, 0, 0.9);
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  cursor: pointer;
 }
 .ipgs-theme-default .ipgs-thumbnails .ipgs-thumb:last-child {
   margin-bottom: 10px;
@@ -620,7 +617,6 @@
   background-color: rgba(0, 0, 0, 0.5);
   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCIgd2lkdGg9IjI2LjY2NyIgaGVpZ2h0PSIyNi42NjciPjxkZWZzPjxjbGlwUGF0aCBpZD0iQSI+PHBhdGggZD0iTTAgMGgyMHYyMEgweiIvPjwvY2xpcFBhdGg+PC9kZWZzPjxnIGNsaXAtcGF0aD0idXJsKCNBKSI+PHBhdGggZD0iTTEwIDguNTg2bC03LjA3LTcuMDdMMS41MTUgMi45MyA4LjU4NiAxMGwtNy4wNyA3LjA3IDEuNDE0IDEuNDE0IDcuMDctNy4wNyA3LjA3IDcuMDcgMS40MTQtMS40MTQtNy4wNy03LjA3IDcuMDctNy4wNy0xLjQxNC0xLjQxNEwxMCA4LjU4NnoiIGZpbGw9IiNmZmYiLz48L2c+PC9zdmc+);
   background-size: contain;
-  cursor: pointer;
 }
 .ipgs-theme-default .ipgs-outline .ipgs-bookmarks-wrap {
   width: 100%;
@@ -639,7 +635,6 @@
   font-size: 14px;
   line-height: 20px;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.7);
-  cursor: pointer;
 }
 .ipgs-theme-default .ipgs-outline .ipgs-bookmark > .ipgs-state {
   position: absolute;
@@ -784,7 +779,6 @@
   background-position: 50% 50%;
   background-repeat: no-repeat;
   opacity: 0.7;
-  cursor: pointer;
 }
 .ipgs-theme-default
   .ipgs-share
@@ -837,7 +831,6 @@
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   max-width: 80%;
-  cursor: pointer;
   z-index: 6;
 }
 .ipgs-theme-default .ipgs-book-cover img {
@@ -971,7 +964,6 @@
   text-align: center;
   white-space: nowrap;
   opacity: 0.7;
-  cursor: pointer;
 }
 .ipgs-theme-default .ipgs-control-pagenumber .ipgs-pagenumber-label:hover {
   opacity: 1;
@@ -1020,7 +1012,6 @@
   background-size: 24px 24px;
   background-repeat: no-repeat;
   opacity: 0.7;
-  cursor: pointer;
 }
 .ipgs-theme-default .ipgs-icon-download:hover,
 .ipgs-theme-default .ipgs-icon-fullscreen:hover,
