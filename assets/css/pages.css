@@ -350,9 +350,10 @@ footer div {
   top: 0;
   transform: rotate(0deg);
 }
-#menu__toggle:checked + .menu__btn > span::after {
+#menu__toggle:checked + .menu__btn > span:nth-child(3) {
   top: 0;
-  transform: rotate(90deg);
+  transform-origin: 25px 5px;
+  transform: rotate(315deg);
 }
 #menu__toggle:checked ~ .menu__box {
   left: 0 !important;
