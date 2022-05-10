@@ -461,8 +461,8 @@ article p {
 }
 
 article p.en {
-  line-height: 1.58;
-  font-size: 99%;
+  line-height: 1.55;
+  font-size: 100.5%;
 }
 
 article h1 {
@@ -543,7 +543,8 @@ article section:nth-child(2) {
   }
 
   article h1 {
-    font-size: 1.5rem;
+    font-size: 1.375rem;
+    line-height: 1.5;
   }
 
   article section:nth-child(1) {
@@ -793,7 +794,7 @@ article section:nth-child(2) {
   }
 
   article h1 {
-    font-size: 2.25rem;
+    font-size: 2rem;
   }
 
   article section:nth-child(1) {
