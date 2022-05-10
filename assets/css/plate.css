@@ -386,13 +386,13 @@ body {
 .work-space:hover,
 .about-space:hover,
 .news-space:hover {
-  color: silver;
+  text-decoration: underline;
   opacity: 0.9;
 }
 .work-space-l:hover,
 .about-space-l:hover,
 .news-space-l:hover {
-  color: silver;
+  text-decoration: underline;
   opacity: 0.9;
 }
 
