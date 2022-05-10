@@ -399,6 +399,12 @@ footer div {
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
   transition-duration: 0.5s;
   z-index: 10;
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 .menu__item {
   display: block;
@@ -656,10 +662,10 @@ article section:nth-child(2) {
 
 @media (min-width: 414px) {
   .arrow.is-left {
-    left: -18.5vw;
+    left: -19vw;
   }
   .arrow.is-right {
-    right: -18.5vw;
+    right: -19vw;
   }
 }
 
