@@ -42,7 +42,7 @@
     <link rel="stylesheet" href="../../css/pages.css" />
     <link rel="stylesheet" type="text/css" href="../../css/ipages.min.css" />
   </head>
-  <body onLoad="Frameset('http://your-url.co.kr')" style="color: rgb(233, 99, 45)">
+  <body style="color: rgb(233, 99, 45)">
     <main class="convert">
       <div class="logo blend">
         <a href="../../../index.html"
@@ -242,14 +242,13 @@
       $("#flipbook").ipages(options);
     </script>
     <script type="text/javascript">
-   function Frameset(page)
-{
-    framecode = "<frameset rows='1*'>"
-    + "<frame name=main src='" + page + "'>"
-    + "</frameset>";
-    document.writｅ(framecode);
-    document.close();
-}
+      function hidestatus() {
+        window.status = "verythings.org";
+        return true;
+      }
+      if (document.layers) document.captureEvents(Event.MOUSEOVER | Event.MOUSEOUT);
+      document.onmouseover = hidestatus;
+      document.onmouseout = hidestatus;
     </script>
     <script src="../../js/script.js"></script>
   </body>
