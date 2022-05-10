@@ -3771,7 +3771,7 @@ article .img-container {
   display: block;
   position: fixed;
   top: 0;
-  left: -100%;
+  left: 100%;
   width: 50%;
   min-width: 200px;
   height: 100%;
@@ -3787,6 +3787,8 @@ article .img-container {
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+
+  transform: translateX(100%);
 }
 .menu__item {
   display: block;
