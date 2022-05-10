@@ -55,7 +55,6 @@ body {
   line-height: 1.6;
   background-color: white;
 
-
   overflow: auto;
   transition: all 0.125s;
 }
@@ -266,6 +265,8 @@ nav div .sticky {
   z-index: 9;
   justify-content: center;
   align-items: center;
+
+  transition: filter 0.125s;
 }
 .work-space-l {
   grid-column: 1 / span 1;
@@ -273,6 +274,8 @@ nav div .sticky {
   z-index: 9;
   justify-content: center;
   align-items: center;
+
+  transition: filter 0.125s;
 }
 .about-space {
   grid-column: 1 / span 1;
@@ -280,6 +283,8 @@ nav div .sticky {
   z-index: 9;
   justify-content: center;
   align-items: center;
+
+  transition: filter 0.125s;
 }
 .about-space-l {
   grid-column: 1 / span 1;
@@ -287,6 +292,8 @@ nav div .sticky {
   z-index: 9;
   justify-content: center;
   align-items: center;
+
+  transition: filter 0.125s;
 }
 .news-space {
   grid-column: 1 / span 1;
@@ -295,6 +302,8 @@ nav div .sticky {
 
   justify-content: center;
   align-items: center;
+
+  transition: filter 0.125s;
 }
 .news-space-l {
   grid-column: 1 / span 1;
@@ -303,6 +312,8 @@ nav div .sticky {
 
   justify-content: center;
   align-items: center;
+
+  transition: filter 0.125s;
 }
 
 .active {
@@ -314,13 +325,13 @@ nav div .sticky {
 .about-space:hover,
 .news-space:hover {
   text-decoration: underline;
-  opacity: 0.9;
+  filter: invert(1);
 }
 .work-space-l:hover,
 .about-space-l:hover,
 .news-space-l:hover {
   text-decoration: underline;
-  opacity: 0.9;
+  filter: invert(1);
 }
 
 .work-space.not-fixed {
@@ -366,7 +377,6 @@ footer div {
   height: 2rem;
   cursor: pointer;
   z-index: 10001 !important;
-
 }
 .menu__btn > span:nth-child(1),
 .menu__btn > span:nth-child(2),
@@ -629,25 +639,41 @@ article section:nth-child(2) {
     right: -25vw;
   }
 
+  figure a:hover {
+    filter: invert(1);
+  }
+
   figure a:nth-child(1) {
     position: relative;
     float: left;
-
+    left: -1rem;
     bottom: 8.8rem;
     color: #fff;
 
-    font-size: 0.55rem;
+    font-size: 0.6rem;
     text-transform: uppercase;
+
+    border: 1px solid;
+    border-radius: 1.25rem;
+    padding: 0.375rem 0.75rem;
+
+    transition: filter 0.125s;
   }
   figure a:nth-child(2) {
     position: relative;
     float: right;
-
+    right: -1rem;
     bottom: 8.8rem;
     color: #fff;
 
-    font-size: 0.55rem;
+    font-size: 0.6rem;
     text-transform: uppercase;
+
+    border: 1px solid;
+    border-radius: 1.25rem;
+    padding: 0.375rem 0.75rem;
+
+    transition: filter 0.125s;
   }
 }
 
@@ -706,7 +732,7 @@ article section:nth-child(2) {
     position: fixed;
     display: inline-block;
     top: calc(70% + 2.125rem);
-    margin: 24px;
+    margin: 32px 24px;
     height: 0.75rem;
     width: 0.75rem;
 
@@ -738,19 +764,27 @@ article section:nth-child(2) {
 
   figure a:nth-child(1) {
     position: fixed;
-    left: 2.5rem;
+    left: 1.875rem;
     top: calc(70% + 3.375rem);
     font-size: 0.85rem;
     text-transform: uppercase;
     bottom: inherit;
+
+    border: 1px solid;
+    border-radius: 1.25rem;
+    padding: 0.5rem 0.875rem;
   }
   figure a:nth-child(2) {
     position: fixed;
-    right: 2.5rem;
+    right: 1.875rem;
     top: calc(70% + 3.375rem);
     font-size: 0.85rem;
     text-transform: uppercase;
     bottom: inherit;
+
+    border: 1px solid;
+    border-radius: 1.25rem;
+    padding: 0.5rem 0.875rem;
   }
 
   article {

@@ -334,7 +334,8 @@ body {
   z-index: 9;
   justify-content: center;
   align-items: center;
-  transition: opacity 0.25s;
+
+  transition: filter 0.125s;
 }
 .work-space-l {
   grid-column: 1 / span 1;
@@ -342,7 +343,8 @@ body {
   z-index: 9;
   justify-content: center;
   align-items: center;
-  transition: opacity 0.25s;
+
+  transition: filter 0.125s;
 }
 .about-space {
   grid-column: 1 / span 1;
@@ -350,7 +352,8 @@ body {
   z-index: 9;
   justify-content: center;
   align-items: center;
-  transition: opacity 0.25s;
+
+  transition: filter 0.125s;
 }
 .about-space-l {
   grid-column: 1 / span 1;
@@ -358,7 +361,8 @@ body {
   z-index: 9;
   justify-content: center;
   align-items: center;
-  transition: opacity 0.25s;
+
+  transition: filter 0.125s;
 }
 .news-space {
   grid-column: 1 / span 1;
@@ -367,7 +371,8 @@ body {
 
   justify-content: center;
   align-items: center;
-  transition: opacity 0.25s;
+
+  transition: filter 0.125s;
 }
 .news-space-l {
   grid-column: 1 / span 1;
@@ -376,25 +381,26 @@ body {
 
   justify-content: center;
   align-items: center;
-  transition: opacity 0.25s;
+
+  transition: filter 0.125s;
 }
 
 .active {
   text-decoration: underline;
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 .work-space:hover,
 .about-space:hover,
 .news-space:hover {
   text-decoration: underline;
-  opacity: 0.9;
+  filter: invert(1);
 }
 .work-space-l:hover,
 .about-space-l:hover,
 .news-space-l:hover {
   text-decoration: underline;
-  opacity: 0.9;
+  filter: invert(1);
 }
 
 @media (min-width: 576px) {

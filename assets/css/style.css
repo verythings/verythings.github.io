@@ -2904,6 +2904,8 @@ a {
   z-index: 9;
   justify-content: center;
   align-items: center;
+
+  transition: filter 0.125s;
 }
 .work-space-l {
   grid-column: 1 / span 1;
@@ -2911,6 +2913,8 @@ a {
   z-index: 9;
   justify-content: center;
   align-items: center;
+
+  transition: filter 0.125s;
 }
 .about-space {
   grid-column: 1 / span 1;
@@ -2918,6 +2922,8 @@ a {
   z-index: 9;
   justify-content: center;
   align-items: center;
+
+  transition: filter 0.125s;
 }
 .about-space-l {
   grid-column: 1 / span 1;
@@ -2925,6 +2931,8 @@ a {
   z-index: 9;
   justify-content: center;
   align-items: center;
+
+  transition: filter 0.125s;
 }
 .news-space {
   grid-column: 1 / span 1;
@@ -2933,6 +2941,8 @@ a {
 
   justify-content: center;
   align-items: center;
+
+  transition: filter 0.125s;
 }
 .news-space-l {
   grid-column: 1 / span 1;
@@ -2941,24 +2951,26 @@ a {
 
   justify-content: center;
   align-items: center;
+
+  transition: filter 0.125s;
 }
 
 .active {
   text-decoration: underline;
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 .work-space:hover,
 .about-space:hover,
 .news-space:hover {
   text-decoration: underline;
-  opacity: 0.9;
+  filter: invert(1);
 }
 .work-space-l:hover,
 .about-space-l:hover,
 .news-space-l:hover {
   text-decoration: underline;
-  opacity: 0.9;
+  filter: invert(1);
 }
 
 .work-space.not-fixed {
@@ -3696,6 +3708,11 @@ article .img-container {
   height: 36vh;
   object-fit: cover;
   transform: scale(1.001);
+  transition: filter 0.25s;
+}
+
+.img-container img:hover {
+  filter: saturate(0.5);
 }
 
 /* hamburger-menu */
@@ -3731,7 +3748,7 @@ article .img-container {
   height: 2rem;
   cursor: pointer;
   z-index: 10001 !important;
-  filter: drop-shadow(0 0 0.25rem #555);
+
 }
 .menu__btn > span,
 .menu__btn > span::before,
