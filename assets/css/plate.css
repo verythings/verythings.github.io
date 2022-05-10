@@ -248,6 +248,8 @@ body {
   display: none;
 }
 
+
+
 .category-view {
   position: fixed;
   grid-template-columns: repeat(24fr, minmax(30%, auto));
@@ -402,6 +404,28 @@ body {
   filter: invert(1);
 }
 
+
+@media (min-width: 300px) {
+  .logo {
+    width: 10rem;
+  }
+
+  .category-view {
+    top: 3.15rem;
+    font-size: 0.75rem;
+    right: 1.1rem;
+  }
+
+  .header {
+    font-size: 1rem;
+    right: 1.75rem;
+  }
+
+  nav {
+    height: 6rem;
+  }
+}
+
 @media (min-width: 576px) {
   .logo {
     width: 12rem;
@@ -414,9 +438,11 @@ body {
   }
 
   .header {
-    position: relative;
-    font-size: 2rem;
-    right: 1.75rem;
+    position: fixed;
+    margin-top: 0;
+    font-size: 1.25rem;
+    right: 2.5rem;
+    left: inherit;
   }
 }
 @media (min-width: 768px) {
