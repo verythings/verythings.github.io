@@ -3765,6 +3765,12 @@ article .img-container {
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
   transition-duration: 0.25s;
   z-index: 10;
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 .menu__item {
   display: block;
