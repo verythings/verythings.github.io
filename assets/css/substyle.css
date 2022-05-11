@@ -353,13 +353,6 @@ footer mark {
 }
 
 @media (min-width: 300px) {
-  .desktop {
-    display: none;
-  }
-
-  .mobile {
-    display: block;
-  }
 
   .logo {
     width: 9rem;
@@ -399,6 +392,18 @@ footer mark {
     bottom: 1rem;
   }
 }
+
+@media (min-width: 414px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+}
+
+
 @media (min-width: 576px) {
   .desktop {
     display: none;
