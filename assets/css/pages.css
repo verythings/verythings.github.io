@@ -346,6 +346,7 @@ footer div {
 
 .hamburger-menu {
   position: absolute;
+  z-index: 1001;
 }
 
 #menu__toggle {
@@ -510,7 +511,7 @@ figure.details img {
 .video-player {
   width: 100%;
   position: relative;
-  z-index: 100001;
+  z-index: 1000;
   font-size: 0;
   overflow: hidden;
 }
