@@ -157,3 +157,11 @@ $(".img-wrapper.thumb-20")
   .mouseleave(function () {
     $(".thumb-20 .image, .thumb-20 figcaption").css("opacity", "0");
   });
+
+  $(".img-wrapper.thumb-21")
+  .mouseenter(function () {
+    $(".thumb-21 .image, .thumb-21 figcaption").css("opacity", "1");
+  })
+  .mouseleave(function () {
+    $(".thumb-21 .image, .thumb-21 figcaption").css("opacity", "0");
+  });

@@ -104,13 +104,13 @@
         <ol class="menu__box">
           <div class="header">
             <div class="work-space">
-                            <a href="../work/index.m.html">&#x0227B; Work</a>
+                            <a href="../work/index.m.html">Work</a>
             </div>
             <div class="about-space">
-<a href="../about/index.m.html">&#x0227B; About</a>
+<a href="../about/index.m.html">About</a>
             </div>
             <div class="news-space">
-<a href="../news/index.m.html">&#x0227B; News</a>
+<a href="../news/index.m.html">News</a>
             </div>
           </div>
         </ol>
@@ -150,9 +150,28 @@
       </p>
     </article>
 
-    <figure>
-      <!-- <div class="book-arrow is-right"></div> -->
-      <img alt="" src="../../img/files/nevertheless/m_pages_1.jpg" id="pic" />
+    <figure class="details">
+      <img src="../../img/files/nevertheless/img/detail_1.jpg" />
+      <img src="../../img/files/nevertheless/img/detail_2.jpg" />
+      <img src="../../img/files/nevertheless/img/detail_3.jpg" />
+      <img src="../../img/files/nevertheless/img/detail_4.jpg" />
+      <img class="half" src="../../img/files/nevertheless/img/detail_5.jpg" />
+      <img class="half" src="../../img/files/nevertheless/img/detail_6.jpg" />
+      <img src="../../img/files/nevertheless/img/detail_7.jpg" />
+      <img src="../../img/files/nevertheless/img/detail_8.jpg" />
+      <img src="../../img/files/nevertheless/img/detail_9.jpg" />
+      <img src="../../img/files/nevertheless/img/detail_10.jpg" />
+
+      <img src="../../img/files/nevertheless/img/detail_12.jpg" />
+      <img src="../../img/files/nevertheless/img/detail_13.jpg" />
+      <img src="../../img/files/nevertheless/img/detail_14.jpg" />
+      <img src="../../img/files/nevertheless/img/detail_15.jpg" />
+      <img src="../../img/files/nevertheless/img/detail_16.jpg" />
+      <img class="half" src="../../img/files/nevertheless/img/detail_17.jpg" />
+      <img class="half" src="../../img/files/nevertheless/img/detail_18.jpg" />
+      <img src="../../img/files/nevertheless/img/detail_19.jpg" />
+      <img class="half" src="../../img/files/nevertheless/img/detail_20.jpg" />
+      <img class="half" src="../../img/files/nevertheless/img/detail_21.jpg" />
     </figure>
 
     <footer>
@@ -192,21 +211,21 @@ $("body, figure a, .arrow").css("color", "rgb(233,99,45)");
 $("span, span::before, span::after").css("background-color", "rgb(233,99,45)");
 
   $(function () {
-    $("figure img").on("click", function () {
+          $(window).scroll(function () {
       $("body, html, .menu__box")
         .css("background-color", "rgb(233,99,45)")
         .css("color", "white");
     });
 
-    $("figure img").on("click", function () {
+          $(window).scroll(function () {
       $("figure a, .arrow").css("color", "white");
     });
 
-    $("figure img").on("click", function () {
+    $(window).scroll(function () {
     $("#Layer_2").css("fill", "white");
   });
 
-  $("figure img").on("click", function () {
+  $(window).scroll(function () {
     $("span, span::before, span::after").css("background", "white");
   });
   
@@ -214,30 +233,6 @@ $("span, span::before, span::after").css("background-color", "rgb(233,99,45)");
 });
 
     </script>
-    <script type="text/javascript">
-      $(function () {
-        let num = 0;
-        let imageName = [
-          "m_pages_2",
-          "m_pages_3",
-          "m_pages_4",
-          "m_pages_5",
-          "m_pages_6",
-          "m_pages_7",
-          "m_pages_8",
-          "m_pages_9",
-          "m_pages_10",
-          "m_pages_11",
-          "m_pages_12",
-          "m_pages_13",
-          "m_pages_1",
-        ];
-        $("#pic").click(function () {
-          if (num == 12) num = 0;
-          else num++;
-          $(this).attr("src", "../../img/files/nevertheless/" + imageName[num] + ".jpg");
-        });
-      });
-    </script>
+  
   </body>
 </html>
