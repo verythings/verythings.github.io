@@ -512,11 +512,12 @@ figure.details img {
   width: 100%;
   position: relative;
   z-index: 1000;
-  font-size: 0;
+
   overflow: hidden;
 }
 .video {
   width: 100%;
+  cursor: pointer;
 }
 .controls__button {
   background: none;
