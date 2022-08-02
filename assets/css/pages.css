@@ -405,8 +405,8 @@ footer div {
   margin: 0;
   list-style: none;
   background-color: #fff;
-  -webkit-box-shadow: -5px 0px 16px 6px rgba(56,56,56,0.43); 
-  box-shadow: -5px 0px 16px 6px rgba(56,56,56,0.43);
+  -webkit-box-shadow: -5px 0px 16px 6px rgba(56, 56, 56, 0.43);
+  box-shadow: -5px 0px 16px 6px rgba(56, 56, 56, 0.43);
   transition-duration: 0.25s;
   z-index: 10;
 
@@ -503,6 +503,104 @@ figure.details img {
   transform: scale(1.05);
   border: none;
   margin: 0;
+}
+
+/* //detail__video */
+
+.video-player {
+  width: 100%;
+  position: relative;
+  z-index: 100001;
+  font-size: 0;
+  overflow: hidden;
+}
+.video {
+  width: 100%;
+}
+.controls__button {
+  background: none;
+  border: 0;
+  line-height: 1;
+  color: white;
+  text-align: center;
+  outline: 0;
+  padding: 0;
+  cursor: pointer;
+  max-width: 50px;
+}
+.controls__slider {
+  width: 10px;
+  height: 30px;
+}
+.controls {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  flex-wrap: wrap;
+  background: rgba(0, 0, 0, 0.1);
+  transform: translateY(0);
+}
+.controls > * {
+  flex: 1;
+}
+.progress {
+  flex: 10;
+  position: relative;
+  display: flex;
+  flex-basis: 100%;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  height: 15px;
+}
+.progress__filled {
+  width: 50%;
+  background: rgb(170, 206, 74);
+  flex: 0;
+  flex-basis: 0%;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  background: transparent;
+  width: 100%;
+  margin: 0 5px;
+}
+input[type="range"]:focus {
+  outline: none;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 4px;
+}
+input[type="range"]::-webkit-slider-thumb {
+  height: 0.9rem;
+  width: 0.9rem;
+  border-radius: 50px;
+  background: rgb(170, 206, 74);
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -3.5px;
+}
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 4px;
+}
+input[type="range"]::-moz-range-thumb {
+  height: 0.9rem;
+  width: 0.9rem;
+  border-radius: 50px;
+  background: rgb(170, 206, 74);
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -3.5px;
 }
 
 figure.details img.half {
