@@ -194,15 +194,11 @@
 
         $(function () {
           $(window).scroll(function () {
-            $("body, html")
-              .css("background-color", "rgb(233,99,45)")
-              .css("color", "white");
-          });
-          $(window).scroll(function () {
-            $("#Layer_2").css("fill", "white");
-          });
-          $(window).scroll(function () {
-            $("figure a, .arrow, .header a").css("color", "white");
+            if ($(document).scrollTop() > 100) {
+              $("body, html").css("background-color", "rgb(233,99,45)").css("color", "white");
+              $("#Layer_2").css("fill", "white");
+              $("figure a, .arrow, .header a").css("color", "white");
+            }
           });
         });
       });

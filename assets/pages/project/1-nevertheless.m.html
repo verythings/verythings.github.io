@@ -212,22 +212,15 @@ $("span, span::before, span::after").css("background-color", "rgb(233,99,45)");
 
   $(function () {
           $(window).scroll(function () {
+            if ($(document).scrollTop() > 100) {
       $("body, html, .menu__box")
         .css("background-color", "rgb(233,99,45)")
         .css("color", "white");
+        $("figure a, .arrow").css("color", "white");
+        $("#Layer_2").css("fill", "white");
+        $("span, span::before, span::after").css("background", "white");
+            }
     });
-
-          $(window).scroll(function () {
-      $("figure a, .arrow").css("color", "white");
-    });
-
-    $(window).scroll(function () {
-    $("#Layer_2").css("fill", "white");
-  });
-
-  $(window).scroll(function () {
-    $("span, span::before, span::after").css("background", "white");
-  });
   
   });
 });

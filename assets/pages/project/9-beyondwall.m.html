@@ -144,13 +144,24 @@
       </p>
     </article>
 
-    <figure>
-      <img
-        alt=""
-        src="../../img/files/beyondwall/m_pages_1.jpg"
-        id="pic"
-        
-      />
+    <figure class="details">
+      <video autoplay controls playsinline>
+        <source src="../../img/files/beyondwall/img/detail_0.webm" type="video/webm" />
+
+        <source src="../../img/files/beyondwall/img/detail_0.mp4" type="video/mp4" />
+        Sorry, your browser doesn't support embedded videos.
+      </video>
+
+      <img src="../../img/files/beyondwall/img/detail_1.jpg" />
+      <img src="../../img/files/beyondwall/img/detail_2.jpg" />
+      <img src="../../img/files/beyondwall/img/detail_3.jpg" />
+      <img class="half" src="../../img/files/beyondwall/img/detail_4.jpg" />
+      <img class="half" src="../../img/files/beyondwall/img/detail_5.jpg" />
+      <img src="../../img/files/beyondwall/img/detail_6.jpg" />
+      <img src="../../img/files/beyondwall/img/detail_7.jpg" />
+      <img src="../../img/files/beyondwall/img/detail_8.jpg" />
+      <img src="../../img/files/beyondwall/img/detail_9.jpg" />
+      <img src="../../img/files/beyondwall/img/detail_10.jpg" />
     </figure>
 
     <footer>
@@ -184,58 +195,28 @@
     </div>
 
     <script>
- $(document).ready(function () {
-        $("body, figure a, .arrow").css("color", "rgb(170,206,74)");
+      $(document).ready(function () {
 
-        $("span, span::before, span::after").css("background-color", "rgb(170,206,74)");
+$("body, figure a, .arrow").css("color", "rgb(170,206,74)");
 
-        $(function () {
-    $("figure img").on("click", function () {
-      $("body, html, .menu__box").css("background-color", "rgb(170,206,74)").css("color", "white");
-          });
+$("span, span::before, span::after").css("background-color", "rgb(170,206,74)");
 
-          $("figure img").on("click", function () {
-            $("figure a, .arrow").css("color", "white");
-          });
-
-          $("figure img").on("click", function () {
-            $("#Layer_2").css("fill", "white");
-          });
-
-          $("figure img").on("click", function () {
-            $("span, span::before, span::after").css("background", "white");
-          });
-        });
-      });
+  $(function () {
+          $(window).scroll(function () {
+            if ($(document).scrollTop() > 100) {
+      $("body, html, .menu__box")
+        .css("background-color", "rgb(170,206,74)")
+        .css("color", "white");
+        $("figure a, .arrow").css("color", "white");
+        $("#Layer_2").css("fill", "white");
+        $("span, span::before, span::after").css("background", "white");
+            }
+    });
+  
+  });
+});
 
     </script>
-    <script type="text/javascript">
-      $(function () {
-        let num = 0;
-        let imageName = [
-          "m_pages_2",
-          "m_pages_3",
-          "m_pages_4",
-          "m_pages_5",
-          "m_pages_6",
-          "m_pages_7",
-          "m_pages_8",
-          "m_pages_9",
-          "m_pages_10",
-          "m_pages_11",
-          "m_pages_12",
-          "m_pages_13",
-          "m_pages_1",
-        ];
-        $("#pic").click(function () {
-          if (num == 12) num = 0;
-          else num++;
-          $(this).attr(
-            "src",
-            "../../img/files/beyondwall/" + imageName[num] + ".jpg"
-          );
-        });
-      });
-    </script>
+   
   </body>
 </html>
