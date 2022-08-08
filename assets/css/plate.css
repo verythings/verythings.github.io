@@ -191,7 +191,6 @@ html {
   box-sizing: border-box;
   -ms-overflow-style: scrollbar;
   cursor: inherit;
-  
 }
 
 @font-face {
@@ -227,7 +226,7 @@ body {
 /* main header */
 
 .logo {
-  position: absolute;
+  position: fixed;
   width: 15rem;
   top: 1.75rem;
   left: 1.5rem;
@@ -247,8 +246,6 @@ body {
   z-index: 101;
   display: none;
 }
-
-
 
 .category-view {
   position: fixed;
@@ -306,8 +303,10 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 10 !important;
-  cursor: pointer;
-  transition: opacity 0.25s;
+  /* cursor: pointer;
+  transition: opacity 0.25s; */
+
+  opacity: 0.5;
 }
 .category-view-5 {
   position: relative;
@@ -317,14 +316,15 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 10 !important;
-  cursor: pointer;
+  /* cursor: pointer;
+  transition: opacity 0.25s; */
+
+  opacity: 0.5;
 }
 
 .category-view-1:hover,
 .category-view-2:hover,
-.category-view-3:hover,
-.category-view-4:hover,
-.category-view-5:hover {
+.category-view-3:hover {
   text-decoration: underline;
   text-underline-position: under;
   opacity: 0.9;
@@ -387,7 +387,6 @@ body {
 }
 
 .active {
-
   opacity: 0.6;
 }
 
@@ -403,7 +402,6 @@ body {
   text-decoration: underline;
   filter: invert(1);
 }
-
 
 @media (min-width: 300px) {
   .logo {

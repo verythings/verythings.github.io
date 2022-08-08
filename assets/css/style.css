@@ -2801,7 +2801,7 @@ a {
 }
 
 .logo {
-  position: absolute;
+  position: fixed;
   width: 15rem;
   top: 1.75rem;
   left: 1.5rem;
