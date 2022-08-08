@@ -494,6 +494,10 @@ article section:nth-child(2) {
   margin: 4rem 0;
 }
 
+figure {
+  z-index: 2 !important;
+}
+
 figure.details {
   overflow: hidden;
   margin: 6rem 0;
@@ -511,7 +515,7 @@ figure.details img {
 .video-player {
   width: 100%;
   position: relative;
-  z-index: 1000;
+  z-index: 1;
 
   overflow: hidden;
 }
